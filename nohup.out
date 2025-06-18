@@ -1,0 +1,2250 @@
+
+Working with 4 GPUs
+Working with 3 Dataset(s):
+ELY: Unlabeled images 307, Training on 307 images, Validation on 31 images
+MID: Unlabeled images 449, Training on 449 images, Validation on 59 images
+LTE: Unlabeled images 460, Training on 460 images, Validation on 41 images
+
+========== STARTING TRAINING ===========
+
+----- train - EPOCH 1 -----
+LEARNING RATE:  0.001
+/home/lwb/anaconda3/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:122: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+train loss: {'ELY': 122.771, 'MID': 9.035, 'LTE': 0.616} (epoch: 1, step: 45) // Avg time: 0.1052 s
+----- val - EPOCH 1 -----
+ELY: val loss: 94760.531 (epoch: 1, step: 0) // Avg time/img: 0.0037 s
+ELY: val loss: 109482.967 (epoch: 1, step: 5) // Avg time/img: 0.0016 s
+ELY: val loss: 108195.911 (epoch: 1, step: 10) // Avg time/img: 0.0015 s
+ELY: val loss: 106692.788 (epoch: 1, step: 14) // Avg time/img: 0.0014 s
+MID: val loss: 106131.922 (epoch: 1, step: 0) // Avg time/img: 0.0015 s
+MID: val loss: 104437.733 (epoch: 1, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 105257.085 (epoch: 1, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 104566.36 (epoch: 1, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 104445.158 (epoch: 1, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 104061.228 (epoch: 1, step: 25) // Avg time/img: 0.0012 s
+MID: val loss: 103972.301 (epoch: 1, step: 28) // Avg time/img: 0.0012 s
+LTE: val loss: 111248.578 (epoch: 1, step: 0) // Avg time/img: 0.0015 s
+LTE: val loss: 106848.633 (epoch: 1, step: 5) // Avg time/img: 0.0012 s
+LTE: val loss: 105741.584 (epoch: 1, step: 10) // Avg time/img: 0.0012 s
+LTE: val loss: 105085.982 (epoch: 1, step: 15) // Avg time/img: 0.0012 s
+LTE: val loss: 105150.699 (epoch: 1, step: 19) // Avg time/img: 0.0012 s
+Epoch time 62.78986716270447 s
+----- train - EPOCH 2 -----
+LEARNING RATE:  0.0009969994993878173
+train loss: {'ELY': 0.302, 'MID': 0.304, 'LTE': 0.185} (epoch: 2, step: 45) // Avg time: 0.0570 s
+Epoch time 54.638821601867676 s
+----- train - EPOCH 3 -----
+LEARNING RATE:  0.000993997995093929
+train loss: {'ELY': 0.142, 'MID': 0.209, 'LTE': 0.143} (epoch: 3, step: 45) // Avg time: 0.0575 s
+Epoch time 54.48126482963562 s
+----- train - EPOCH 4 -----
+LEARNING RATE:  0.0009909954834128342
+train loss: {'ELY': 0.104, 'MID': 0.152, 'LTE': 0.123} (epoch: 4, step: 45) // Avg time: 0.0559 s
+Epoch time 54.437432527542114 s
+----- train - EPOCH 5 -----
+LEARNING RATE:  0.000987991960612827
+train loss: {'ELY': 0.139, 'MID': 0.135, 'LTE': 0.117} (epoch: 5, step: 45) // Avg time: 0.0569 s
+----- val - EPOCH 5 -----
+ELY: val loss: 97190.703 (epoch: 5, step: 0) // Avg time/img: 0.0009 s
+ELY: val loss: 106121.615 (epoch: 5, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 106257.678 (epoch: 5, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105870.345 (epoch: 5, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 96376.547 (epoch: 5, step: 0) // Avg time/img: 0.0016 s
+MID: val loss: 103341.449 (epoch: 5, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102872.768 (epoch: 5, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103544.605 (epoch: 5, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 102635.411 (epoch: 5, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103091.071 (epoch: 5, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103100.935 (epoch: 5, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 105702.25 (epoch: 5, step: 0) // Avg time/img: 0.0015 s
+LTE: val loss: 106354.121 (epoch: 5, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 104282.618 (epoch: 5, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104533.326 (epoch: 5, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104887.584 (epoch: 5, step: 19) // Avg time/img: 0.0013 s
+Epoch time 56.94364929199219 s
+----- train - EPOCH 6 -----
+LEARNING RATE:  0.000984987422935722
+train loss: {'ELY': 0.088, 'MID': 0.116, 'LTE': 0.126} (epoch: 6, step: 45) // Avg time: 0.0565 s
+Epoch time 53.61694526672363 s
+----- train - EPOCH 7 -----
+LEARNING RATE:  0.0009819818665965754
+train loss: {'ELY': 0.078, 'MID': 0.105, 'LTE': 0.09} (epoch: 7, step: 45) // Avg time: 0.0566 s
+Epoch time 53.79960894584656 s
+----- train - EPOCH 8 -----
+LEARNING RATE:  0.0009789752877834036
+train loss: {'ELY': 0.067, 'MID': 0.097, 'LTE': 0.075} (epoch: 8, step: 45) // Avg time: 0.0569 s
+Epoch time 54.38319778442383 s
+----- train - EPOCH 9 -----
+LEARNING RATE:  0.0009759676826568975
+train loss: {'ELY': 0.074, 'MID': 0.09, 'LTE': 0.075} (epoch: 9, step: 45) // Avg time: 0.0580 s
+Epoch time 54.999242305755615 s
+----- train - EPOCH 10 -----
+LEARNING RATE:  0.0009729590473501306
+train loss: {'ELY': 0.064, 'MID': 0.085, 'LTE': 0.093} (epoch: 10, step: 45) // Avg time: 0.0572 s
+----- val - EPOCH 10 -----
+ELY: val loss: 107463.141 (epoch: 10, step: 0) // Avg time/img: 0.0014 s
+ELY: val loss: 104630.453 (epoch: 10, step: 5) // Avg time/img: 0.0013 s
+ELY: val loss: 104770.363 (epoch: 10, step: 10) // Avg time/img: 0.0013 s
+ELY: val loss: 105670.846 (epoch: 10, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 102145.188 (epoch: 10, step: 0) // Avg time/img: 0.0016 s
+MID: val loss: 103745.35 (epoch: 10, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 103671.113 (epoch: 10, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 104001.95 (epoch: 10, step: 15) // Avg time/img: 0.0012 s
+MID: val loss: 103889.842 (epoch: 10, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103970.549 (epoch: 10, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103506.027 (epoch: 10, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 104293.414 (epoch: 10, step: 0) // Avg time/img: 0.0013 s
+LTE: val loss: 104478.474 (epoch: 10, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105684.289 (epoch: 10, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104932.914 (epoch: 10, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 105309.617 (epoch: 10, step: 19) // Avg time/img: 0.0012 s
+Epoch time 57.67481255531311 s
+----- train - EPOCH 11 -----
+LEARNING RATE:  0.0009699493779682662
+train loss: {'ELY': 0.063, 'MID': 0.083, 'LTE': 0.073} (epoch: 11, step: 45) // Avg time: 0.0583 s
+Epoch time 54.348103046417236 s
+----- train - EPOCH 12 -----
+LEARNING RATE:  0.0009669386705882588
+train loss: {'ELY': 0.049, 'MID': 0.069, 'LTE': 0.065} (epoch: 12, step: 45) // Avg time: 0.0573 s
+Epoch time 53.64467930793762 s
+----- train - EPOCH 13 -----
+LEARNING RATE:  0.0009639269212585509
+train loss: {'ELY': 0.052, 'MID': 0.071, 'LTE': 0.051} (epoch: 13, step: 45) // Avg time: 0.0580 s
+Epoch time 54.04612874984741 s
+----- train - EPOCH 14 -----
+LEARNING RATE:  0.0009609141259987668
+train loss: {'ELY': 0.056, 'MID': 0.072, 'LTE': 0.053} (epoch: 14, step: 45) // Avg time: 0.0561 s
+Epoch time 53.9386146068573 s
+----- train - EPOCH 15 -----
+LEARNING RATE:  0.0009579002807994003
+train loss: {'ELY': 0.047, 'MID': 0.064, 'LTE': 0.055} (epoch: 15, step: 45) // Avg time: 0.0575 s
+----- val - EPOCH 15 -----
+ELY: val loss: 101100.156 (epoch: 15, step: 0) // Avg time/img: 0.0015 s
+ELY: val loss: 105505.698 (epoch: 15, step: 5) // Avg time/img: 0.0013 s
+ELY: val loss: 107370.403 (epoch: 15, step: 10) // Avg time/img: 0.0013 s
+ELY: val loss: 107482.369 (epoch: 15, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 100801.641 (epoch: 15, step: 0) // Avg time/img: 0.0016 s
+MID: val loss: 105182.706 (epoch: 15, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 105404.974 (epoch: 15, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 105531.642 (epoch: 15, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 105701.664 (epoch: 15, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 105381.638 (epoch: 15, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 105039.462 (epoch: 15, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 110632.648 (epoch: 15, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 108618.312 (epoch: 15, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 107589.127 (epoch: 15, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 106767.663 (epoch: 15, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 106368.004 (epoch: 15, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.26442742347717 s
+----- train - EPOCH 16 -----
+LEARNING RATE:  0.0009548853816214997
+train loss: {'ELY': 0.042, 'MID': 0.064, 'LTE': 0.055} (epoch: 16, step: 45) // Avg time: 0.0571 s
+Epoch time 53.805851221084595 s
+----- train - EPOCH 17 -----
+LEARNING RATE:  0.0009518694243963476
+train loss: {'ELY': 0.04, 'MID': 0.05, 'LTE': 0.046} (epoch: 17, step: 45) // Avg time: 0.0574 s
+Epoch time 54.030182123184204 s
+----- train - EPOCH 18 -----
+LEARNING RATE:  0.0009488524050251349
+train loss: {'ELY': 0.046, 'MID': 0.614, 'LTE': 11.087} (epoch: 18, step: 45) // Avg time: 0.0557 s
+Epoch time 53.778515577316284 s
+----- train - EPOCH 19 -----
+LEARNING RATE:  0.000945834319378632
+train loss: {'ELY': 0.71, 'MID': 0.743, 'LTE': 0.323} (epoch: 19, step: 45) // Avg time: 0.0560 s
+Epoch time 53.8933687210083 s
+----- train - EPOCH 20 -----
+LEARNING RATE:  0.0009428151632968544
+train loss: {'ELY': 0.223, 'MID': 0.273, 'LTE': 0.188} (epoch: 20, step: 45) // Avg time: 0.0566 s
+----- val - EPOCH 20 -----
+ELY: val loss: 107503.492 (epoch: 20, step: 0) // Avg time/img: 0.0012 s
+ELY: val loss: 103981.783 (epoch: 20, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 106289.8 (epoch: 20, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 106065.987 (epoch: 20, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 104352.789 (epoch: 20, step: 0) // Avg time/img: 0.0015 s
+MID: val loss: 102342.414 (epoch: 20, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102727.46 (epoch: 20, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103264.252 (epoch: 20, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 102747.367 (epoch: 20, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 102850.185 (epoch: 20, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103199.96 (epoch: 20, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 112303.125 (epoch: 20, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 105470.667 (epoch: 20, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105040.808 (epoch: 20, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104987.991 (epoch: 20, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104891.201 (epoch: 20, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.61602282524109 s
+----- train - EPOCH 21 -----
+LEARNING RATE:  0.0009397949325887223
+train loss: {'ELY': 0.135, 'MID': 0.216, 'LTE': 0.148} (epoch: 21, step: 45) // Avg time: 0.0568 s
+Epoch time 53.993913650512695 s
+----- train - EPOCH 22 -----
+LEARNING RATE:  0.0009367736230317175
+train loss: {'ELY': 0.136, 'MID': 0.186, 'LTE': 0.13} (epoch: 22, step: 45) // Avg time: 0.0563 s
+Epoch time 54.00336003303528 s
+----- train - EPOCH 23 -----
+LEARNING RATE:  0.0009337512303715337
+train loss: {'ELY': 0.103, 'MID': 0.149, 'LTE': 0.118} (epoch: 23, step: 45) // Avg time: 0.0572 s
+Epoch time 54.0608971118927 s
+----- train - EPOCH 24 -----
+LEARNING RATE:  0.0009307277503217213
+train loss: {'ELY': 0.087, 'MID': 0.156, 'LTE': 0.104} (epoch: 24, step: 45) // Avg time: 0.0557 s
+Epoch time 54.55815362930298 s
+----- train - EPOCH 25 -----
+LEARNING RATE:  0.0009277031785633282
+train loss: {'ELY': 0.076, 'MID': 0.123, 'LTE': 0.096} (epoch: 25, step: 45) // Avg time: 0.0570 s
+----- val - EPOCH 25 -----
+ELY: val loss: 93767.641 (epoch: 25, step: 0) // Avg time/img: 0.0016 s
+ELY: val loss: 104872.846 (epoch: 25, step: 5) // Avg time/img: 0.0012 s
+ELY: val loss: 103892.966 (epoch: 25, step: 10) // Avg time/img: 0.0011 s
+ELY: val loss: 105251.761 (epoch: 25, step: 14) // Avg time/img: 0.0011 s
+MID: val loss: 99990.031 (epoch: 25, step: 0) // Avg time/img: 0.0016 s
+MID: val loss: 103106.81 (epoch: 25, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 103056.21 (epoch: 25, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102653.048 (epoch: 25, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 102941.217 (epoch: 25, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 102989.116 (epoch: 25, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103229.17 (epoch: 25, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 107132.828 (epoch: 25, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 102915.897 (epoch: 25, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 103951.183 (epoch: 25, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104576.135 (epoch: 25, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104849.832 (epoch: 25, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.02592587471008 s
+----- train - EPOCH 26 -----
+LEARNING RATE:  0.0009246775107445346
+train loss: {'ELY': 0.081, 'MID': 0.131, 'LTE': 0.093} (epoch: 26, step: 45) // Avg time: 0.0577 s
+Epoch time 54.66776967048645 s
+----- train - EPOCH 27 -----
+LEARNING RATE:  0.0009216507424802825
+train loss: {'ELY': 0.071, 'MID': 0.109, 'LTE': 0.091} (epoch: 27, step: 45) // Avg time: 0.0561 s
+Epoch time 54.462138414382935 s
+----- train - EPOCH 28 -----
+LEARNING RATE:  0.0009186228693518994
+train loss: {'ELY': 0.065, 'MID': 0.101, 'LTE': 0.083} (epoch: 28, step: 45) // Avg time: 0.0573 s
+Epoch time 54.18881869316101 s
+----- train - EPOCH 29 -----
+LEARNING RATE:  0.0009155938869067161
+train loss: {'ELY': 0.064, 'MID': 0.103, 'LTE': 0.077} (epoch: 29, step: 45) // Avg time: 0.0586 s
+Epoch time 54.0413875579834 s
+----- train - EPOCH 30 -----
+LEARNING RATE:  0.0009125637906576804
+train loss: {'ELY': 0.06, 'MID': 0.091, 'LTE': 0.081} (epoch: 30, step: 45) // Avg time: 0.0587 s
+----- val - EPOCH 30 -----
+ELY: val loss: 104216.914 (epoch: 30, step: 0) // Avg time/img: 0.0015 s
+ELY: val loss: 106216.223 (epoch: 30, step: 5) // Avg time/img: 0.0013 s
+ELY: val loss: 105366.752 (epoch: 30, step: 10) // Avg time/img: 0.0013 s
+ELY: val loss: 105369.838 (epoch: 30, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 107073.039 (epoch: 30, step: 0) // Avg time/img: 0.0016 s
+MID: val loss: 103594.249 (epoch: 30, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 103142.725 (epoch: 30, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102729.907 (epoch: 30, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 102819.691 (epoch: 30, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 102959.82 (epoch: 30, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103221.25 (epoch: 30, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 106728.312 (epoch: 30, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 104997.661 (epoch: 30, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 106109.683 (epoch: 30, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105017.155 (epoch: 30, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104877.552 (epoch: 30, step: 19) // Avg time/img: 0.0013 s
+Epoch time 58.44752526283264 s
+----- train - EPOCH 31 -----
+LEARNING RATE:  0.0009095325760829623
+train loss: {'ELY': 0.05, 'MID': 0.084, 'LTE': 0.082} (epoch: 31, step: 45) // Avg time: 0.0557 s
+Epoch time 53.79604721069336 s
+----- train - EPOCH 32 -----
+LEARNING RATE:  0.0009065002386255554
+train loss: {'ELY': 0.067, 'MID': 0.081, 'LTE': 0.069} (epoch: 32, step: 45) // Avg time: 0.0567 s
+Epoch time 53.9089195728302 s
+----- train - EPOCH 33 -----
+LEARNING RATE:  0.0009034667736928717
+train loss: {'ELY': 0.049, 'MID': 0.079, 'LTE': 0.066} (epoch: 33, step: 45) // Avg time: 0.0574 s
+Epoch time 53.857476234436035 s
+----- train - EPOCH 34 -----
+LEARNING RATE:  0.0009004321766563289
+train loss: {'ELY': 0.046, 'MID': 0.073, 'LTE': 0.06} (epoch: 34, step: 45) // Avg time: 0.0578 s
+Epoch time 54.17103886604309 s
+----- train - EPOCH 35 -----
+LEARNING RATE:  0.0008973964428509338
+train loss: {'ELY': 0.046, 'MID': 0.115, 'LTE': 0.106} (epoch: 35, step: 45) // Avg time: 0.0555 s
+----- val - EPOCH 35 -----
+ELY: val loss: 98372.859 (epoch: 35, step: 0) // Avg time/img: 0.0012 s
+ELY: val loss: 104920.048 (epoch: 35, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 105261.788 (epoch: 35, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105227.296 (epoch: 35, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 102487.578 (epoch: 35, step: 0) // Avg time/img: 0.0016 s
+MID: val loss: 102155.603 (epoch: 35, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102907.34 (epoch: 35, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103448.193 (epoch: 35, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103062.266 (epoch: 35, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103093.796 (epoch: 35, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103124.178 (epoch: 35, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 104336.828 (epoch: 35, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 105102.23 (epoch: 35, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105637.284 (epoch: 35, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104898.539 (epoch: 35, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104847.156 (epoch: 35, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.6121039390564 s
+----- train - EPOCH 36 -----
+LEARNING RATE:  0.0008943595675748563
+train loss: {'ELY': 0.05, 'MID': 0.069, 'LTE': 0.074} (epoch: 36, step: 45) // Avg time: 0.0575 s
+Epoch time 54.00070095062256 s
+----- train - EPOCH 37 -----
+LEARNING RATE:  0.0008913215460889999
+train loss: {'ELY': 0.058, 'MID': 0.067, 'LTE': 0.062} (epoch: 37, step: 45) // Avg time: 0.0579 s
+Epoch time 54.165369749069214 s
+----- train - EPOCH 38 -----
+LEARNING RATE:  0.0008882823736165631
+train loss: {'ELY': 0.043, 'MID': 0.067, 'LTE': 0.055} (epoch: 38, step: 45) // Avg time: 0.0581 s
+Epoch time 54.657556772232056 s
+----- train - EPOCH 39 -----
+LEARNING RATE:  0.0008852420453425949
+train loss: {'ELY': 0.045, 'MID': 0.068, 'LTE': 0.062} (epoch: 39, step: 45) // Avg time: 0.0553 s
+Epoch time 54.11891555786133 s
+----- train - EPOCH 40 -----
+LEARNING RATE:  0.0008822005564135439
+train loss: {'ELY': 0.039, 'MID': 0.064, 'LTE': 0.059} (epoch: 40, step: 45) // Avg time: 0.0568 s
+----- val - EPOCH 40 -----
+ELY: val loss: 100754.078 (epoch: 40, step: 0) // Avg time/img: 0.0010 s
+ELY: val loss: 106299.815 (epoch: 40, step: 5) // Avg time/img: 0.0011 s
+ELY: val loss: 106238.592 (epoch: 40, step: 10) // Avg time/img: 0.0012 s
+ELY: val loss: 105631.154 (epoch: 40, step: 14) // Avg time/img: 0.0012 s
+MID: val loss: 101847.719 (epoch: 40, step: 0) // Avg time/img: 0.0015 s
+MID: val loss: 103367.335 (epoch: 40, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102538.097 (epoch: 40, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102464.024 (epoch: 40, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 102896.613 (epoch: 40, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 102811.37 (epoch: 40, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103120.479 (epoch: 40, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 108220.891 (epoch: 40, step: 0) // Avg time/img: 0.0013 s
+LTE: val loss: 102839.435 (epoch: 40, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 104151.151 (epoch: 40, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104201.531 (epoch: 40, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104699.872 (epoch: 40, step: 19) // Avg time/img: 0.0013 s
+Epoch time 58.41584587097168 s
+----- train - EPOCH 41 -----
+LEARNING RATE:  0.0008791579019367991
+train loss: {'ELY': 0.04, 'MID': 0.071, 'LTE': 0.053} (epoch: 41, step: 45) // Avg time: 0.0573 s
+Epoch time 54.17085862159729 s
+----- train - EPOCH 42 -----
+LEARNING RATE:  0.0008761140769802246
+train loss: {'ELY': 0.048, 'MID': 0.066, 'LTE': 0.056} (epoch: 42, step: 45) // Avg time: 0.0575 s
+Epoch time 54.46405839920044 s
+----- train - EPOCH 43 -----
+LEARNING RATE:  0.000873069076571686
+train loss: {'ELY': 0.043, 'MID': 0.053, 'LTE': 0.052} (epoch: 43, step: 45) // Avg time: 0.0581 s
+Epoch time 54.22751450538635 s
+----- train - EPOCH 44 -----
+LEARNING RATE:  0.0008700228956985699
+train loss: {'ELY': 0.037, 'MID': 0.061, 'LTE': 0.054} (epoch: 44, step: 45) // Avg time: 0.0578 s
+Epoch time 54.09346675872803 s
+----- train - EPOCH 45 -----
+LEARNING RATE:  0.0008669755293072957
+train loss: {'ELY': 0.053, 'MID': 0.059, 'LTE': 0.054} (epoch: 45, step: 45) // Avg time: 0.0575 s
+----- val - EPOCH 45 -----
+ELY: val loss: 101526.297 (epoch: 45, step: 0) // Avg time/img: 0.0015 s
+ELY: val loss: 103374.035 (epoch: 45, step: 5) // Avg time/img: 0.0013 s
+ELY: val loss: 105021.784 (epoch: 45, step: 10) // Avg time/img: 0.0013 s
+ELY: val loss: 105263.457 (epoch: 45, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 100307.5 (epoch: 45, step: 0) // Avg time/img: 0.0016 s
+MID: val loss: 101238.93 (epoch: 45, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102159.883 (epoch: 45, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103324.96 (epoch: 45, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103431.235 (epoch: 45, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103291.912 (epoch: 45, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103383.316 (epoch: 45, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 101908.312 (epoch: 45, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 104970.046 (epoch: 45, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105110.826 (epoch: 45, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104934.083 (epoch: 45, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104979.585 (epoch: 45, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.32688927650452 s
+----- train - EPOCH 46 -----
+LEARNING RATE:  0.0008639269723028191
+train loss: {'ELY': 0.038, 'MID': 0.047, 'LTE': 0.051} (epoch: 46, step: 45) // Avg time: 0.0561 s
+Epoch time 54.43939661979675 s
+----- train - EPOCH 47 -----
+LEARNING RATE:  0.0008608772195481283
+train loss: {'ELY': 0.035, 'MID': 0.048, 'LTE': 0.053} (epoch: 47, step: 45) // Avg time: 0.0568 s
+Epoch time 54.61712431907654 s
+----- train - EPOCH 48 -----
+LEARNING RATE:  0.0008578262658637308
+train loss: {'ELY': 0.047, 'MID': 0.057, 'LTE': 0.051} (epoch: 48, step: 45) // Avg time: 0.0568 s
+Epoch time 54.066224336624146 s
+----- train - EPOCH 49 -----
+LEARNING RATE:  0.0008547741060271343
+train loss: {'ELY': 0.04, 'MID': 0.058, 'LTE': 0.047} (epoch: 49, step: 45) // Avg time: 0.0568 s
+Epoch time 54.29772877693176 s
+----- train - EPOCH 50 -----
+LEARNING RATE:  0.0008517207347723164
+train loss: {'ELY': 0.037, 'MID': 0.047, 'LTE': 0.049} (epoch: 50, step: 45) // Avg time: 0.0574 s
+----- val - EPOCH 50 -----
+ELY: val loss: 99823.594 (epoch: 50, step: 0) // Avg time/img: 0.0010 s
+ELY: val loss: 103187.957 (epoch: 50, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 104323.609 (epoch: 50, step: 10) // Avg time/img: 0.0011 s
+ELY: val loss: 105110.069 (epoch: 50, step: 14) // Avg time/img: 0.0011 s
+MID: val loss: 108727.539 (epoch: 50, step: 0) // Avg time/img: 0.0016 s
+MID: val loss: 102729.309 (epoch: 50, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102978.025 (epoch: 50, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103558.598 (epoch: 50, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103743.81 (epoch: 50, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103181.432 (epoch: 50, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103193.618 (epoch: 50, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 105116.438 (epoch: 50, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 107036.694 (epoch: 50, step: 5) // Avg time/img: 0.0012 s
+LTE: val loss: 105307.985 (epoch: 50, step: 10) // Avg time/img: 0.0012 s
+LTE: val loss: 105195.222 (epoch: 50, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104619.339 (epoch: 50, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.21035671234131 s
+----- train - EPOCH 51 -----
+LEARNING RATE:  0.0008486661467891869
+train loss: {'ELY': 0.037, 'MID': 0.047, 'LTE': 0.059} (epoch: 51, step: 45) // Avg time: 0.0566 s
+Epoch time 53.890591859817505 s
+----- train - EPOCH 52 -----
+LEARNING RATE:  0.0008456103367230419
+train loss: {'ELY': 0.03, 'MID': 0.049, 'LTE': 0.053} (epoch: 52, step: 45) // Avg time: 0.0571 s
+Epoch time 54.439428091049194 s
+----- train - EPOCH 53 -----
+LEARNING RATE:  0.0008425532991740082
+train loss: {'ELY': 0.036, 'MID': 0.046, 'LTE': 0.068} (epoch: 53, step: 45) // Avg time: 0.0561 s
+Epoch time 53.85849404335022 s
+----- train - EPOCH 54 -----
+LEARNING RATE:  0.0008394950286964775
+train loss: {'ELY': 0.039, 'MID': 0.048, 'LTE': 0.048} (epoch: 54, step: 45) // Avg time: 0.0583 s
+Epoch time 53.897326946258545 s
+----- train - EPOCH 55 -----
+LEARNING RATE:  0.0008364355197985339
+train loss: {'ELY': 0.045, 'MID': 0.049, 'LTE': 0.052} (epoch: 55, step: 45) // Avg time: 0.0574 s
+----- val - EPOCH 55 -----
+ELY: val loss: 102375.875 (epoch: 55, step: 0) // Avg time/img: 0.0009 s
+ELY: val loss: 103942.613 (epoch: 55, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 105833.57 (epoch: 55, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 106033.343 (epoch: 55, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 103165.906 (epoch: 55, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 102400.224 (epoch: 55, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102800.138 (epoch: 55, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102384.246 (epoch: 55, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103089.074 (epoch: 55, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103258.782 (epoch: 55, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103233.801 (epoch: 55, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 102107.344 (epoch: 55, step: 0) // Avg time/img: 0.0014 s
+LTE: val loss: 104125.076 (epoch: 55, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 104232.509 (epoch: 55, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104485.181 (epoch: 55, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104904.93 (epoch: 55, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.26934027671814 s
+----- train - EPOCH 56 -----
+LEARNING RATE:  0.0008333747669413688
+train loss: {'ELY': 0.03, 'MID': 0.048, 'LTE': 0.042} (epoch: 56, step: 45) // Avg time: 0.0570 s
+Epoch time 53.853920221328735 s
+----- train - EPOCH 57 -----
+LEARNING RATE:  0.0008303127645386884
+train loss: {'ELY': 0.035, 'MID': 0.048, 'LTE': 0.055} (epoch: 57, step: 45) // Avg time: 0.0592 s
+Epoch time 54.12577700614929 s
+----- train - EPOCH 58 -----
+LEARNING RATE:  0.0008272495069561094
+train loss: {'ELY': 0.044, 'MID': 0.053, 'LTE': 0.046} (epoch: 58, step: 45) // Avg time: 0.0584 s
+Epoch time 54.07543659210205 s
+----- train - EPOCH 59 -----
+LEARNING RATE:  0.0008241849885105465
+train loss: {'ELY': 0.04, 'MID': 0.046, 'LTE': 0.044} (epoch: 59, step: 45) // Avg time: 0.0574 s
+Epoch time 55.261147260665894 s
+----- train - EPOCH 60 -----
+LEARNING RATE:  0.0008211192034695874
+train loss: {'ELY': 0.037, 'MID': 0.041, 'LTE': 0.044} (epoch: 60, step: 45) // Avg time: 0.0564 s
+----- val - EPOCH 60 -----
+ELY: val loss: 114897.672 (epoch: 60, step: 0) // Avg time/img: 0.0012 s
+ELY: val loss: 103484.693 (epoch: 60, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 107457.631 (epoch: 60, step: 10) // Avg time/img: 0.0011 s
+ELY: val loss: 106189.366 (epoch: 60, step: 14) // Avg time/img: 0.0011 s
+MID: val loss: 104077.328 (epoch: 60, step: 0) // Avg time/img: 0.0016 s
+MID: val loss: 102687.133 (epoch: 60, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102743.078 (epoch: 60, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103251.208 (epoch: 60, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103256.122 (epoch: 60, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103035.7 (epoch: 60, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103344.426 (epoch: 60, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 101742.602 (epoch: 60, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 104405.281 (epoch: 60, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105392.381 (epoch: 60, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105688.302 (epoch: 60, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 105078.558 (epoch: 60, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.203455448150635 s
+----- train - EPOCH 61 -----
+LEARNING RATE:  0.0008180521460508585
+train loss: {'ELY': 0.045, 'MID': 0.048, 'LTE': 0.046} (epoch: 61, step: 45) // Avg time: 0.0579 s
+Epoch time 54.474029302597046 s
+----- train - EPOCH 62 -----
+LEARNING RATE:  0.0008149838104213793
+train loss: {'ELY': 0.044, 'MID': 0.045, 'LTE': 0.042} (epoch: 62, step: 45) // Avg time: 0.0577 s
+Epoch time 54.15053653717041 s
+----- train - EPOCH 63 -----
+LEARNING RATE:  0.0008119141906969069
+train loss: {'ELY': 0.03, 'MID': 0.055, 'LTE': 0.039} (epoch: 63, step: 45) // Avg time: 0.0577 s
+Epoch time 54.3962287902832 s
+----- train - EPOCH 64 -----
+LEARNING RATE:  0.0008088432809412661
+train loss: {'ELY': 0.036, 'MID': 0.049, 'LTE': 0.047} (epoch: 64, step: 45) // Avg time: 0.0571 s
+Epoch time 53.83467483520508 s
+----- train - EPOCH 65 -----
+LEARNING RATE:  0.0008057710751656717
+train loss: {'ELY': 0.032, 'MID': 0.04, 'LTE': 0.042} (epoch: 65, step: 45) // Avg time: 0.0565 s
+----- val - EPOCH 65 -----
+ELY: val loss: 109140.766 (epoch: 65, step: 0) // Avg time/img: 0.0012 s
+ELY: val loss: 104379.47 (epoch: 65, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 105645.888 (epoch: 65, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105369.439 (epoch: 65, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 106090.023 (epoch: 65, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 103200.632 (epoch: 65, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 104342.731 (epoch: 65, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103684.682 (epoch: 65, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103535.555 (epoch: 65, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103347.506 (epoch: 65, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103272.178 (epoch: 65, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 106755.422 (epoch: 65, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 105750.126 (epoch: 65, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105306.085 (epoch: 65, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105296.35 (epoch: 65, step: 15) // Avg time/img: 0.0014 s
+LTE: val loss: 104749.691 (epoch: 65, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.31466317176819 s
+----- train - EPOCH 66 -----
+LEARNING RATE:  0.0008026975673280368
+train loss: {'ELY': 0.033, 'MID': 0.047, 'LTE': 0.042} (epoch: 66, step: 45) // Avg time: 0.0554 s
+Epoch time 53.521888256073 s
+----- train - EPOCH 67 -----
+LEARNING RATE:  0.0007996227513322692
+train loss: {'ELY': 0.036, 'MID': 0.036, 'LTE': 0.041} (epoch: 67, step: 45) // Avg time: 0.0569 s
+Epoch time 54.52120351791382 s
+----- train - EPOCH 68 -----
+LEARNING RATE:  0.0007965466210275559
+train loss: {'ELY': 0.032, 'MID': 0.046, 'LTE': 0.043} (epoch: 68, step: 45) // Avg time: 0.0549 s
+Epoch time 54.04013442993164 s
+----- train - EPOCH 69 -----
+LEARNING RATE:  0.0007934691702076353
+train loss: {'ELY': 0.029, 'MID': 0.045, 'LTE': 0.048} (epoch: 69, step: 45) // Avg time: 0.0579 s
+Epoch time 54.61109447479248 s
+----- train - EPOCH 70 -----
+LEARNING RATE:  0.0007903903926100556
+train loss: {'ELY': 0.035, 'MID': 0.047, 'LTE': 0.047} (epoch: 70, step: 45) // Avg time: 0.0578 s
+----- val - EPOCH 70 -----
+ELY: val loss: 114448.516 (epoch: 70, step: 0) // Avg time/img: 0.0011 s
+ELY: val loss: 107336.784 (epoch: 70, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 105932.305 (epoch: 70, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105929.21 (epoch: 70, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 103602.57 (epoch: 70, step: 0) // Avg time/img: 0.0014 s
+MID: val loss: 102462.719 (epoch: 70, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102543.333 (epoch: 70, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102995.481 (epoch: 70, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 102919.022 (epoch: 70, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103178.206 (epoch: 70, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103245.591 (epoch: 70, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 103136.578 (epoch: 70, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 105347.173 (epoch: 70, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105525.503 (epoch: 70, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105179.659 (epoch: 70, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104759.226 (epoch: 70, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.64306426048279 s
+----- train - EPOCH 71 -----
+LEARNING RATE:  0.0007873102819154206
+train loss: {'ELY': 0.035, 'MID': 0.038, 'LTE': 0.036} (epoch: 71, step: 45) // Avg time: 0.0551 s
+Epoch time 53.83307433128357 s
+----- train - EPOCH 72 -----
+LEARNING RATE:  0.0007842288317466228
+train loss: {'ELY': 0.033, 'MID': 0.038, 'LTE': 0.035} (epoch: 72, step: 45) // Avg time: 0.0557 s
+Epoch time 54.34774112701416 s
+----- train - EPOCH 73 -----
+LEARNING RATE:  0.0007811460356680608
+train loss: {'ELY': 0.028, 'MID': 0.044, 'LTE': 0.043} (epoch: 73, step: 45) // Avg time: 0.0571 s
+Epoch time 54.689197301864624 s
+----- train - EPOCH 74 -----
+LEARNING RATE:  0.0007780618871848444
+train loss: {'ELY': 0.034, 'MID': 0.042, 'LTE': 0.035} (epoch: 74, step: 45) // Avg time: 0.0594 s
+Epoch time 53.646331548690796 s
+----- train - EPOCH 75 -----
+LEARNING RATE:  0.000774976379741985
+train loss: {'ELY': 0.033, 'MID': 0.037, 'LTE': 0.032} (epoch: 75, step: 45) // Avg time: 0.0578 s
+----- val - EPOCH 75 -----
+ELY: val loss: 100992.664 (epoch: 75, step: 0) // Avg time/img: 0.0008 s
+ELY: val loss: 104243.436 (epoch: 75, step: 5) // Avg time/img: 0.0011 s
+ELY: val loss: 107570.723 (epoch: 75, step: 10) // Avg time/img: 0.0012 s
+ELY: val loss: 106232.809 (epoch: 75, step: 14) // Avg time/img: 0.0012 s
+MID: val loss: 102840.062 (epoch: 75, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 103027.764 (epoch: 75, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 101695.768 (epoch: 75, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102327.317 (epoch: 75, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103115.107 (epoch: 75, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103616.086 (epoch: 75, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103615.825 (epoch: 75, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 101032.938 (epoch: 75, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 104590.805 (epoch: 75, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 104996.258 (epoch: 75, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105026.893 (epoch: 75, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 105014.088 (epoch: 75, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.16447710990906 s
+----- train - EPOCH 76 -----
+LEARNING RATE:  0.0007718895067235705
+train loss: {'ELY': 0.027, 'MID': 0.041, 'LTE': 7.145} (epoch: 76, step: 45) // Avg time: 0.0579 s
+Epoch time 55.01184034347534 s
+----- train - EPOCH 77 -----
+LEARNING RATE:  0.0007688012614519259
+train loss: {'ELY': 0.662, 'MID': 0.714, 'LTE': 0.279} (epoch: 77, step: 45) // Avg time: 0.0571 s
+Epoch time 54.13112282752991 s
+----- train - EPOCH 78 -----
+LEARNING RATE:  0.0007657116371867591
+train loss: {'ELY': 0.21, 'MID': 0.266, 'LTE': 0.157} (epoch: 78, step: 45) // Avg time: 0.0560 s
+Epoch time 53.84778022766113 s
+----- train - EPOCH 79 -----
+LEARNING RATE:  0.0007626206271242884
+train loss: {'ELY': 0.124, 'MID': 0.175, 'LTE': 0.122} (epoch: 79, step: 45) // Avg time: 0.0566 s
+Epoch time 53.95290017127991 s
+----- train - EPOCH 80 -----
+LEARNING RATE:  0.0007595282243963577
+train loss: {'ELY': 0.094, 'MID': 0.136, 'LTE': 0.105} (epoch: 80, step: 45) // Avg time: 0.0573 s
+----- val - EPOCH 80 -----
+ELY: val loss: 111049.953 (epoch: 80, step: 0) // Avg time/img: 0.0012 s
+ELY: val loss: 106688.633 (epoch: 80, step: 5) // Avg time/img: 0.0012 s
+ELY: val loss: 105783.798 (epoch: 80, step: 10) // Avg time/img: 0.0012 s
+ELY: val loss: 106043.41 (epoch: 80, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 107335.586 (epoch: 80, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 105127.219 (epoch: 80, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 103528.612 (epoch: 80, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103077.842 (epoch: 80, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 102898.279 (epoch: 80, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 102983.97 (epoch: 80, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103210.684 (epoch: 80, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 111447.719 (epoch: 80, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 104130.579 (epoch: 80, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 104881.004 (epoch: 80, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104706.548 (epoch: 80, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104983.852 (epoch: 80, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.32311820983887 s
+----- train - EPOCH 81 -----
+LEARNING RATE:  0.0007564344220695323
+train loss: {'ELY': 0.087, 'MID': 0.113, 'LTE': 0.089} (epoch: 81, step: 45) // Avg time: 0.0583 s
+Epoch time 53.59481477737427 s
+----- train - EPOCH 82 -----
+LEARNING RATE:  0.0007533392131441786
+train loss: {'ELY': 0.076, 'MID': 0.103, 'LTE': 0.094} (epoch: 82, step: 45) // Avg time: 0.0578 s
+Epoch time 54.19020104408264 s
+----- train - EPOCH 83 -----
+LEARNING RATE:  0.0007502425905535281
+train loss: {'ELY': 0.066, 'MID': 0.102, 'LTE': 0.09} (epoch: 83, step: 45) // Avg time: 0.0576 s
+Epoch time 54.482293128967285 s
+----- train - EPOCH 84 -----
+LEARNING RATE:  0.0007471445471627207
+train loss: {'ELY': 0.061, 'MID': 0.081, 'LTE': 0.081} (epoch: 84, step: 45) // Avg time: 0.0578 s
+Epoch time 54.895790576934814 s
+----- train - EPOCH 85 -----
+LEARNING RATE:  0.0007440450757678328
+train loss: {'ELY': 0.054, 'MID': 0.078, 'LTE': 0.069} (epoch: 85, step: 45) // Avg time: 0.0571 s
+----- val - EPOCH 85 -----
+ELY: val loss: 116317.711 (epoch: 85, step: 0) // Avg time/img: 0.0015 s
+ELY: val loss: 106184.331 (epoch: 85, step: 5) // Avg time/img: 0.0013 s
+ELY: val loss: 105384.704 (epoch: 85, step: 10) // Avg time/img: 0.0013 s
+ELY: val loss: 105781.542 (epoch: 85, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 104095.906 (epoch: 85, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 102869.277 (epoch: 85, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102650.918 (epoch: 85, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103170.953 (epoch: 85, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 102976.479 (epoch: 85, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103216.509 (epoch: 85, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103188.036 (epoch: 85, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 109517.18 (epoch: 85, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 104763.763 (epoch: 85, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 104837.817 (epoch: 85, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104444.396 (epoch: 85, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104782.0 (epoch: 85, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.63754367828369 s
+----- train - EPOCH 86 -----
+LEARNING RATE:  0.0007409441690948863
+train loss: {'ELY': 0.046, 'MID': 0.07, 'LTE': 0.066} (epoch: 86, step: 45) // Avg time: 0.0578 s
+Epoch time 53.93331027030945 s
+----- train - EPOCH 87 -----
+LEARNING RATE:  0.0007378418197988369
+train loss: {'ELY': 0.051, 'MID': 0.069, 'LTE': 0.061} (epoch: 87, step: 45) // Avg time: 0.0561 s
+Epoch time 54.504544258117676 s
+----- train - EPOCH 88 -----
+LEARNING RATE:  0.0007347380204625457
+train loss: {'ELY': 0.054, 'MID': 0.069, 'LTE': 0.06} (epoch: 88, step: 45) // Avg time: 0.0568 s
+Epoch time 53.74115872383118 s
+----- train - EPOCH 89 -----
+LEARNING RATE:  0.0007316327635957288
+train loss: {'ELY': 0.044, 'MID': 0.065, 'LTE': 0.065} (epoch: 89, step: 45) // Avg time: 0.0589 s
+Epoch time 54.364506006240845 s
+----- train - EPOCH 90 -----
+LEARNING RATE:  0.0007285260416338881
+train loss: {'ELY': 0.044, 'MID': 0.065, 'LTE': 0.081} (epoch: 90, step: 45) // Avg time: 0.0578 s
+----- val - EPOCH 90 -----
+ELY: val loss: 93818.219 (epoch: 90, step: 0) // Avg time/img: 0.0011 s
+ELY: val loss: 104666.383 (epoch: 90, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 106579.406 (epoch: 90, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105324.608 (epoch: 90, step: 14) // Avg time/img: 0.0011 s
+MID: val loss: 102794.297 (epoch: 90, step: 0) // Avg time/img: 0.0014 s
+MID: val loss: 100865.122 (epoch: 90, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102992.773 (epoch: 90, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103223.615 (epoch: 90, step: 15) // Avg time/img: 0.0014 s
+MID: val loss: 103440.746 (epoch: 90, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103375.247 (epoch: 90, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103327.445 (epoch: 90, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 103544.5 (epoch: 90, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 106051.488 (epoch: 90, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105093.154 (epoch: 90, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104518.186 (epoch: 90, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104819.384 (epoch: 90, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.1052987575531 s
+----- train - EPOCH 91 -----
+LEARNING RATE:  0.0007254178469372199
+train loss: {'ELY': 0.043, 'MID': 0.07, 'LTE': 0.069} (epoch: 91, step: 45) // Avg time: 0.0576 s
+Epoch time 54.0236656665802 s
+----- train - EPOCH 92 -----
+LEARNING RATE:  0.0007223081717895039
+train loss: {'ELY': 0.042, 'MID': 0.068, 'LTE': 0.053} (epoch: 92, step: 45) // Avg time: 0.0574 s
+Epoch time 56.014567852020264 s
+----- train - EPOCH 93 -----
+LEARNING RATE:  0.0007191970083969686
+train loss: {'ELY': 0.056, 'MID': 0.059, 'LTE': 0.056} (epoch: 93, step: 45) // Avg time: 0.0557 s
+Epoch time 54.115973711013794 s
+----- train - EPOCH 94 -----
+LEARNING RATE:  0.0007160843488871357
+train loss: {'ELY': 0.041, 'MID': 0.054, 'LTE': 0.06} (epoch: 94, step: 45) // Avg time: 0.0561 s
+Epoch time 54.12396454811096 s
+----- train - EPOCH 95 -----
+LEARNING RATE:  0.0007129701853076412
+train loss: {'ELY': 0.038, 'MID': 0.06, 'LTE': 0.053} (epoch: 95, step: 45) // Avg time: 0.0582 s
+----- val - EPOCH 95 -----
+ELY: val loss: 105047.594 (epoch: 95, step: 0) // Avg time/img: 0.0015 s
+ELY: val loss: 106585.513 (epoch: 95, step: 5) // Avg time/img: 0.0014 s
+ELY: val loss: 106704.736 (epoch: 95, step: 10) // Avg time/img: 0.0013 s
+ELY: val loss: 105845.568 (epoch: 95, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 99281.5 (epoch: 95, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 101458.611 (epoch: 95, step: 5) // Avg time/img: 0.0014 s
+MID: val loss: 102556.164 (epoch: 95, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102558.188 (epoch: 95, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 102571.294 (epoch: 95, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 102815.468 (epoch: 95, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103225.987 (epoch: 95, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 107627.281 (epoch: 95, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 104725.954 (epoch: 95, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 104530.667 (epoch: 95, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104769.788 (epoch: 95, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 105027.369 (epoch: 95, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.26442098617554 s
+----- train - EPOCH 96 -----
+LEARNING RATE:  0.0007098545096250324
+train loss: {'ELY': 0.047, 'MID': 0.054, 'LTE': 0.058} (epoch: 96, step: 45) // Avg time: 0.0573 s
+Epoch time 53.92982864379883 s
+----- train - EPOCH 97 -----
+LEARNING RATE:  0.0007067373137235415
+train loss: {'ELY': 0.041, 'MID': 0.057, 'LTE': 0.06} (epoch: 97, step: 45) // Avg time: 0.0579 s
+Epoch time 54.58234167098999 s
+----- train - EPOCH 98 -----
+LEARNING RATE:  0.0007036185894038355
+train loss: {'ELY': 0.046, 'MID': 0.058, 'LTE': 0.048} (epoch: 98, step: 45) // Avg time: 0.0588 s
+Epoch time 53.9502387046814 s
+----- train - EPOCH 99 -----
+LEARNING RATE:  0.0007004983283817374
+train loss: {'ELY': 0.038, 'MID': 0.054, 'LTE': 0.049} (epoch: 99, step: 45) // Avg time: 0.0578 s
+Epoch time 54.71965456008911 s
+----- train - EPOCH 100 -----
+LEARNING RATE:  0.0006973765222869263
+train loss: {'ELY': 0.037, 'MID': 0.05, 'LTE': 0.055} (epoch: 100, step: 45) // Avg time: 0.0586 s
+----- val - EPOCH 100 -----
+ELY: val loss: 101436.844 (epoch: 100, step: 0) // Avg time/img: 0.0011 s
+ELY: val loss: 106585.333 (epoch: 100, step: 5) // Avg time/img: 0.0012 s
+ELY: val loss: 105797.649 (epoch: 100, step: 10) // Avg time/img: 0.0012 s
+ELY: val loss: 105992.645 (epoch: 100, step: 14) // Avg time/img: 0.0012 s
+MID: val loss: 103703.75 (epoch: 100, step: 0) // Avg time/img: 0.0016 s
+MID: val loss: 104139.871 (epoch: 100, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 103686.701 (epoch: 100, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103100.94 (epoch: 100, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103359.581 (epoch: 100, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103149.984 (epoch: 100, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103339.777 (epoch: 100, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 101069.289 (epoch: 100, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 104302.053 (epoch: 100, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 104059.778 (epoch: 100, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104660.342 (epoch: 100, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104830.697 (epoch: 100, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.19211530685425 s
+----- train - EPOCH 101 -----
+LEARNING RATE:  0.0006942531626616071
+train loss: {'ELY': 0.033, 'MID': 0.048, 'LTE': 0.065} (epoch: 101, step: 45) // Avg time: 0.0546 s
+Epoch time 54.56445837020874 s
+----- train - EPOCH 102 -----
+LEARNING RATE:  0.0006911282409591543
+train loss: {'ELY': 0.047, 'MID': 0.044, 'LTE': 0.047} (epoch: 102, step: 45) // Avg time: 0.0576 s
+Epoch time 54.367064237594604 s
+----- train - EPOCH 103 -----
+LEARNING RATE:  0.0006880017485427283
+train loss: {'ELY': 0.039, 'MID': 0.046, 'LTE': 0.047} (epoch: 103, step: 45) // Avg time: 0.0574 s
+Epoch time 54.06371068954468 s
+----- train - EPOCH 104 -----
+LEARNING RATE:  0.0006848736766838626
+train loss: {'ELY': 0.031, 'MID': 0.046, 'LTE': 0.05} (epoch: 104, step: 45) // Avg time: 0.0563 s
+Epoch time 53.73597073554993 s
+----- train - EPOCH 105 -----
+LEARNING RATE:  0.0006817440165610206
+train loss: {'ELY': 0.036, 'MID': 0.04, 'LTE': 0.046} (epoch: 105, step: 45) // Avg time: 0.0581 s
+----- val - EPOCH 105 -----
+ELY: val loss: 96089.812 (epoch: 105, step: 0) // Avg time/img: 0.0009 s
+ELY: val loss: 104540.82 (epoch: 105, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 106754.21 (epoch: 105, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105322.194 (epoch: 105, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 104260.57 (epoch: 105, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 103984.116 (epoch: 105, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 103666.551 (epoch: 105, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103792.631 (epoch: 105, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103758.884 (epoch: 105, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103735.486 (epoch: 105, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103470.713 (epoch: 105, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 106092.539 (epoch: 105, step: 0) // Avg time/img: 0.0015 s
+LTE: val loss: 103871.5 (epoch: 105, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105202.545 (epoch: 105, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105454.322 (epoch: 105, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 105039.618 (epoch: 105, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.9712598323822 s
+----- train - EPOCH 106 -----
+LEARNING RATE:  0.000678612759258125
+train loss: {'ELY': 0.035, 'MID': 0.043, 'LTE': 0.045} (epoch: 106, step: 45) // Avg time: 0.0565 s
+Epoch time 54.10195970535278 s
+----- train - EPOCH 107 -----
+LEARNING RATE:  0.0006754798957630525
+train loss: {'ELY': 0.035, 'MID': 0.043, 'LTE': 0.041} (epoch: 107, step: 45) // Avg time: 0.0578 s
+Epoch time 54.048320293426514 s
+----- train - EPOCH 108 -----
+LEARNING RATE:  0.0006723454169660995
+train loss: {'ELY': 0.03, 'MID': 0.046, 'LTE': 0.041} (epoch: 108, step: 45) // Avg time: 0.0513 s
+Epoch time 54.36622166633606 s
+----- train - EPOCH 109 -----
+LEARNING RATE:  0.0006692093136584148
+train loss: {'ELY': 0.033, 'MID': 0.045, 'LTE': 0.039} (epoch: 109, step: 45) // Avg time: 0.0544 s
+Epoch time 54.21576237678528 s
+----- train - EPOCH 110 -----
+LEARNING RATE:  0.0006660715765303976
+train loss: {'ELY': 0.032, 'MID': 0.044, 'LTE': 0.048} (epoch: 110, step: 45) // Avg time: 0.0575 s
+----- val - EPOCH 110 -----
+ELY: val loss: 114598.211 (epoch: 110, step: 0) // Avg time/img: 0.0015 s
+ELY: val loss: 108911.458 (epoch: 110, step: 5) // Avg time/img: 0.0013 s
+ELY: val loss: 107336.332 (epoch: 110, step: 10) // Avg time/img: 0.0013 s
+ELY: val loss: 105836.874 (epoch: 110, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 100488.781 (epoch: 110, step: 0) // Avg time/img: 0.0016 s
+MID: val loss: 102489.872 (epoch: 110, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 103240.68 (epoch: 110, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103662.312 (epoch: 110, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103734.528 (epoch: 110, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103291.478 (epoch: 110, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103164.568 (epoch: 110, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 108418.43 (epoch: 110, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 106473.329 (epoch: 110, step: 5) // Avg time/img: 0.0014 s
+LTE: val loss: 104517.575 (epoch: 110, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104995.196 (epoch: 110, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104786.47 (epoch: 110, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.572519063949585 s
+----- train - EPOCH 111 -----
+LEARNING RATE:  0.0006629321961700618
+train loss: {'ELY': 0.044, 'MID': 0.041, 'LTE': 0.045} (epoch: 111, step: 45) // Avg time: 0.0575 s
+Epoch time 54.17658281326294 s
+----- train - EPOCH 112 -----
+LEARNING RATE:  0.0006597911630613657
+train loss: {'ELY': 0.04, 'MID': 0.045, 'LTE': 0.043} (epoch: 112, step: 45) // Avg time: 0.0580 s
+Epoch time 53.975961208343506 s
+----- train - EPOCH 113 -----
+LEARNING RATE:  0.000656648467582504
+train loss: {'ELY': 0.034, 'MID': 0.042, 'LTE': 0.04} (epoch: 113, step: 45) // Avg time: 0.0578 s
+Epoch time 53.663840770721436 s
+----- train - EPOCH 114 -----
+LEARNING RATE:  0.0006535041000041638
+train loss: {'ELY': 0.033, 'MID': 0.036, 'LTE': 0.038} (epoch: 114, step: 45) // Avg time: 0.0578 s
+Epoch time 53.71901607513428 s
+----- train - EPOCH 115 -----
+LEARNING RATE:  0.000650358050487742
+train loss: {'ELY': 0.033, 'MID': 0.043, 'LTE': 0.043} (epoch: 115, step: 45) // Avg time: 0.0571 s
+----- val - EPOCH 115 -----
+ELY: val loss: 100665.312 (epoch: 115, step: 0) // Avg time/img: 0.0010 s
+ELY: val loss: 103204.655 (epoch: 115, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 106114.409 (epoch: 115, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105790.624 (epoch: 115, step: 14) // Avg time/img: 0.0012 s
+MID: val loss: 104101.172 (epoch: 115, step: 0) // Avg time/img: 0.0016 s
+MID: val loss: 102960.589 (epoch: 115, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102286.303 (epoch: 115, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102591.716 (epoch: 115, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 102998.292 (epoch: 115, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103062.425 (epoch: 115, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103444.838 (epoch: 115, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 103726.492 (epoch: 115, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 102439.695 (epoch: 115, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 104341.143 (epoch: 115, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105148.394 (epoch: 115, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104732.091 (epoch: 115, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.186798334121704 s
+----- train - EPOCH 116 -----
+LEARNING RATE:  0.000647210309083523
+train loss: {'ELY': 0.032, 'MID': 0.042, 'LTE': 0.048} (epoch: 116, step: 45) // Avg time: 0.0569 s
+Epoch time 54.782142877578735 s
+----- train - EPOCH 117 -----
+LEARNING RATE:  0.0006440608657288161
+train loss: {'ELY': 0.027, 'MID': 0.036, 'LTE': 0.048} (epoch: 117, step: 45) // Avg time: 0.0580 s
+Epoch time 54.05978298187256 s
+----- train - EPOCH 118 -----
+LEARNING RATE:  0.0006409097102460521
+train loss: {'ELY': 0.033, 'MID': 0.037, 'LTE': 0.036} (epoch: 118, step: 45) // Avg time: 0.0560 s
+Epoch time 54.039591550827026 s
+----- train - EPOCH 119 -----
+LEARNING RATE:  0.0006377568323408364
+train loss: {'ELY': 0.034, 'MID': 0.041, 'LTE': 0.043} (epoch: 119, step: 45) // Avg time: 0.0582 s
+Epoch time 54.40363359451294 s
+----- train - EPOCH 120 -----
+LEARNING RATE:  0.0006346022215999581
+train loss: {'ELY': 0.033, 'MID': 0.036, 'LTE': 0.036} (epoch: 120, step: 45) // Avg time: 0.0581 s
+----- val - EPOCH 120 -----
+ELY: val loss: 100653.016 (epoch: 120, step: 0) // Avg time/img: 0.0011 s
+ELY: val loss: 106467.116 (epoch: 120, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 106198.71 (epoch: 120, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105959.61 (epoch: 120, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 96918.672 (epoch: 120, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 101601.924 (epoch: 120, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 101111.592 (epoch: 120, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102823.423 (epoch: 120, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103368.693 (epoch: 120, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103368.849 (epoch: 120, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103376.342 (epoch: 120, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 108335.406 (epoch: 120, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 105870.202 (epoch: 120, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105744.888 (epoch: 120, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105205.904 (epoch: 120, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104845.821 (epoch: 120, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.128759145736694 s
+----- train - EPOCH 121 -----
+LEARNING RATE:  0.0006314458674893553
+train loss: {'ELY': 0.028, 'MID': 0.034, 'LTE': 0.034} (epoch: 121, step: 45) // Avg time: 0.0588 s
+Epoch time 54.23555827140808 s
+----- train - EPOCH 122 -----
+LEARNING RATE:  0.0006282877593520325
+train loss: {'ELY': 0.027, 'MID': 0.039, 'LTE': 0.037} (epoch: 122, step: 45) // Avg time: 0.0565 s
+Epoch time 54.21135210990906 s
+----- train - EPOCH 123 -----
+LEARNING RATE:  0.0006251278864059312
+train loss: {'ELY': 0.025, 'MID': 0.037, 'LTE': 0.041} (epoch: 123, step: 45) // Avg time: 0.0580 s
+Epoch time 54.43659472465515 s
+----- train - EPOCH 124 -----
+LEARNING RATE:  0.0006219662377417515
+train loss: {'ELY': 0.029, 'MID': 0.038, 'LTE': 0.034} (epoch: 124, step: 45) // Avg time: 0.0582 s
+Epoch time 54.52388405799866 s
+----- train - EPOCH 125 -----
+LEARNING RATE:  0.0006188028023207216
+train loss: {'ELY': 0.029, 'MID': 0.035, 'LTE': 0.035} (epoch: 125, step: 45) // Avg time: 0.0579 s
+----- val - EPOCH 125 -----
+ELY: val loss: 114838.484 (epoch: 125, step: 0) // Avg time/img: 0.0013 s
+ELY: val loss: 110268.47 (epoch: 125, step: 5) // Avg time/img: 0.0012 s
+ELY: val loss: 108606.775 (epoch: 125, step: 10) // Avg time/img: 0.0012 s
+ELY: val loss: 106036.885 (epoch: 125, step: 14) // Avg time/img: 0.0012 s
+MID: val loss: 103940.125 (epoch: 125, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 102840.91 (epoch: 125, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102309.499 (epoch: 125, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102851.646 (epoch: 125, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 102600.416 (epoch: 125, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103368.47 (epoch: 125, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103220.208 (epoch: 125, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 107104.188 (epoch: 125, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 105240.991 (epoch: 125, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 104919.032 (epoch: 125, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104682.176 (epoch: 125, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104933.969 (epoch: 125, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.56287956237793 s
+----- train - EPOCH 126 -----
+LEARNING RATE:  0.0006156375689723185
+train loss: {'ELY': 0.025, 'MID': 0.031, 'LTE': 0.038} (epoch: 126, step: 45) // Avg time: 0.0582 s
+Epoch time 53.680148124694824 s
+----- train - EPOCH 127 -----
+LEARNING RATE:  0.0006124705263919325
+train loss: {'ELY': 0.029, 'MID': 0.033, 'LTE': 0.035} (epoch: 127, step: 45) // Avg time: 0.0586 s
+Epoch time 54.31771397590637 s
+----- train - EPOCH 128 -----
+LEARNING RATE:  0.0006093016631384764
+train loss: {'ELY': 0.025, 'MID': 0.03, 'LTE': 0.04} (epoch: 128, step: 45) // Avg time: 0.0585 s
+Epoch time 56.1523540019989 s
+----- train - EPOCH 129 -----
+LEARNING RATE:  0.0006061309676319417
+train loss: {'ELY': 0.027, 'MID': 0.031, 'LTE': 0.028} (epoch: 129, step: 45) // Avg time: 0.0572 s
+Epoch time 53.954208850860596 s
+----- train - EPOCH 130 -----
+LEARNING RATE:  0.000602958428150892
+train loss: {'ELY': 0.026, 'MID': 0.032, 'LTE': 0.034} (epoch: 130, step: 45) // Avg time: 0.0588 s
+----- val - EPOCH 130 -----
+ELY: val loss: 112189.055 (epoch: 130, step: 0) // Avg time/img: 0.0011 s
+ELY: val loss: 107377.206 (epoch: 130, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 105958.349 (epoch: 130, step: 10) // Avg time/img: 0.0011 s
+ELY: val loss: 106161.027 (epoch: 130, step: 14) // Avg time/img: 0.0012 s
+MID: val loss: 103860.656 (epoch: 130, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 101605.227 (epoch: 130, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 103287.008 (epoch: 130, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103743.599 (epoch: 130, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103298.297 (epoch: 130, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103772.287 (epoch: 130, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103456.603 (epoch: 130, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 106770.375 (epoch: 130, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 104541.617 (epoch: 130, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 104989.393 (epoch: 130, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104940.934 (epoch: 130, step: 15) // Avg time/img: 0.0014 s
+LTE: val loss: 105064.306 (epoch: 130, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.303601026535034 s
+----- train - EPOCH 131 -----
+LEARNING RATE:  0.0005997840328298988
+train loss: {'ELY': 0.03, 'MID': 0.037, 'LTE': 0.044} (epoch: 131, step: 45) // Avg time: 0.0570 s
+Epoch time 54.28675389289856 s
+----- train - EPOCH 132 -----
+LEARNING RATE:  0.0005966077696569153
+train loss: {'ELY': 0.027, 'MID': 0.037, 'LTE': 0.032} (epoch: 132, step: 45) // Avg time: 0.0573 s
+Epoch time 54.48186230659485 s
+----- train - EPOCH 133 -----
+LEARNING RATE:  0.0005934296264705859
+train loss: {'ELY': 0.028, 'MID': 0.034, 'LTE': 0.031} (epoch: 133, step: 45) // Avg time: 0.0547 s
+Epoch time 54.30292797088623 s
+----- train - EPOCH 134 -----
+LEARNING RATE:  0.0005902495909574899
+train loss: {'ELY': 0.023, 'MID': 0.034, 'LTE': 0.03} (epoch: 134, step: 45) // Avg time: 0.0558 s
+Epoch time 54.323668241500854 s
+----- train - EPOCH 135 -----
+LEARNING RATE:  0.0005870676506493183
+train loss: {'ELY': 0.024, 'MID': 0.035, 'LTE': 0.031} (epoch: 135, step: 45) // Avg time: 0.0579 s
+----- val - EPOCH 135 -----
+ELY: val loss: 96970.664 (epoch: 135, step: 0) // Avg time/img: 0.0011 s
+ELY: val loss: 105159.056 (epoch: 135, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 105328.663 (epoch: 135, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105592.435 (epoch: 135, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 101739.492 (epoch: 135, step: 0) // Avg time/img: 0.0016 s
+MID: val loss: 102973.182 (epoch: 135, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 103575.849 (epoch: 135, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103899.25 (epoch: 135, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103588.536 (epoch: 135, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103680.098 (epoch: 135, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103405.564 (epoch: 135, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 100477.297 (epoch: 135, step: 0) // Avg time/img: 0.0014 s
+LTE: val loss: 104643.581 (epoch: 135, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105300.774 (epoch: 135, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105159.34 (epoch: 135, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 105041.486 (epoch: 135, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.590508460998535 s
+----- train - EPOCH 136 -----
+LEARNING RATE:  0.0005838837929199803
+train loss: {'ELY': 0.022, 'MID': 0.036, 'LTE': 0.03} (epoch: 136, step: 45) // Avg time: 0.0577 s
+Epoch time 54.242573261260986 s
+----- train - EPOCH 137 -----
+LEARNING RATE:  0.0005806980049826374
+train loss: {'ELY': 0.025, 'MID': 0.032, 'LTE': 0.026} (epoch: 137, step: 45) // Avg time: 0.0578 s
+Epoch time 54.46385455131531 s
+----- train - EPOCH 138 -----
+LEARNING RATE:  0.0005775102738866647
+train loss: {'ELY': 0.02, 'MID': 0.028, 'LTE': 0.029} (epoch: 138, step: 45) // Avg time: 0.0569 s
+Epoch time 54.2347309589386 s
+----- train - EPOCH 139 -----
+LEARNING RATE:  0.0005743205865145341
+train loss: {'ELY': 0.025, 'MID': 0.027, 'LTE': 0.035} (epoch: 139, step: 45) // Avg time: 0.0568 s
+Epoch time 53.998244524002075 s
+----- train - EPOCH 140 -----
+LEARNING RATE:  0.0005711289295786201
+train loss: {'ELY': 0.022, 'MID': 0.032, 'LTE': 0.027} (epoch: 140, step: 45) // Avg time: 0.0552 s
+----- val - EPOCH 140 -----
+ELY: val loss: 107214.898 (epoch: 140, step: 0) // Avg time/img: 0.0010 s
+ELY: val loss: 108441.501 (epoch: 140, step: 5) // Avg time/img: 0.0011 s
+ELY: val loss: 105761.613 (epoch: 140, step: 10) // Avg time/img: 0.0012 s
+ELY: val loss: 105885.459 (epoch: 140, step: 14) // Avg time/img: 0.0012 s
+MID: val loss: 107090.688 (epoch: 140, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 102889.634 (epoch: 140, step: 5) // Avg time/img: 0.0014 s
+MID: val loss: 103909.11 (epoch: 140, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103391.603 (epoch: 140, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103268.604 (epoch: 140, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103426.46 (epoch: 140, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103339.561 (epoch: 140, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 103906.297 (epoch: 140, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 105617.618 (epoch: 140, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105069.386 (epoch: 140, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104641.578 (epoch: 140, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104844.092 (epoch: 140, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.08934664726257 s
+----- train - EPOCH 141 -----
+LEARNING RATE:  0.0005679352896179233
+train loss: {'ELY': 0.022, 'MID': 0.026, 'LTE': 0.027} (epoch: 141, step: 45) // Avg time: 0.0578 s
+Epoch time 54.65883231163025 s
+----- train - EPOCH 142 -----
+LEARNING RATE:  0.0005647396529947098
+train loss: {'ELY': 0.021, 'MID': 0.025, 'LTE': 0.03} (epoch: 142, step: 45) // Avg time: 0.0575 s
+Epoch time 54.724565267562866 s
+----- train - EPOCH 143 -----
+LEARNING RATE:  0.0005615420058910646
+train loss: {'ELY': 0.034, 'MID': 0.031, 'LTE': 0.026} (epoch: 143, step: 45) // Avg time: 0.0562 s
+Epoch time 53.84288311004639 s
+----- train - EPOCH 144 -----
+LEARNING RATE:  0.0005583423343053556
+train loss: {'ELY': 0.019, 'MID': 0.024, 'LTE': 0.027} (epoch: 144, step: 45) // Avg time: 0.0588 s
+Epoch time 53.992616415023804 s
+----- train - EPOCH 145 -----
+LEARNING RATE:  0.0005551406240486037
+train loss: {'ELY': 0.021, 'MID': 0.024, 'LTE': 0.026} (epoch: 145, step: 45) // Avg time: 0.0561 s
+----- val - EPOCH 145 -----
+ELY: val loss: 109928.977 (epoch: 145, step: 0) // Avg time/img: 0.0017 s
+ELY: val loss: 108816.781 (epoch: 145, step: 5) // Avg time/img: 0.0013 s
+ELY: val loss: 107831.681 (epoch: 145, step: 10) // Avg time/img: 0.0013 s
+ELY: val loss: 106141.041 (epoch: 145, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 103701.156 (epoch: 145, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 102690.26 (epoch: 145, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102334.185 (epoch: 145, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102525.076 (epoch: 145, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 102948.511 (epoch: 145, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 102797.877 (epoch: 145, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103194.672 (epoch: 145, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 103583.906 (epoch: 145, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 105390.5 (epoch: 145, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105689.026 (epoch: 145, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105637.428 (epoch: 145, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 105065.682 (epoch: 145, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.07461643218994 s
+----- train - EPOCH 146 -----
+LEARNING RATE:  0.0005519368607407594
+train loss: {'ELY': 0.027, 'MID': 0.029, 'LTE': 0.028} (epoch: 146, step: 45) // Avg time: 0.0566 s
+Epoch time 54.081554651260376 s
+----- train - EPOCH 147 -----
+LEARNING RATE:  0.0005487310298068803
+train loss: {'ELY': 0.025, 'MID': 0.029, 'LTE': 0.026} (epoch: 147, step: 45) // Avg time: 0.0581 s
+Epoch time 53.86194443702698 s
+----- train - EPOCH 148 -----
+LEARNING RATE:  0.0005455231164732059
+train loss: {'ELY': 0.024, 'MID': 0.023, 'LTE': 0.023} (epoch: 148, step: 45) // Avg time: 0.0573 s
+Epoch time 54.36074256896973 s
+----- train - EPOCH 149 -----
+LEARNING RATE:  0.0005423131057631276
+train loss: {'ELY': 0.018, 'MID': 0.022, 'LTE': 0.025} (epoch: 149, step: 45) // Avg time: 0.0554 s
+Epoch time 53.703908920288086 s
+----- train - EPOCH 150 -----
+LEARNING RATE:  0.0005391009824930518
+train loss: {'ELY': 0.022, 'MID': 0.022, 'LTE': 0.028} (epoch: 150, step: 45) // Avg time: 0.0572 s
+----- val - EPOCH 150 -----
+ELY: val loss: 108783.172 (epoch: 150, step: 0) // Avg time/img: 0.0012 s
+ELY: val loss: 109897.362 (epoch: 150, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 105695.589 (epoch: 150, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 106001.148 (epoch: 150, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 105707.961 (epoch: 150, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 101782.706 (epoch: 150, step: 5) // Avg time/img: 0.0014 s
+MID: val loss: 102675.804 (epoch: 150, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102988.744 (epoch: 150, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103551.404 (epoch: 150, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103573.757 (epoch: 150, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103328.154 (epoch: 150, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 107370.688 (epoch: 150, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 104882.948 (epoch: 150, step: 5) // Avg time/img: 0.0014 s
+LTE: val loss: 105844.134 (epoch: 150, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105438.237 (epoch: 150, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 105028.555 (epoch: 150, step: 19) // Avg time/img: 0.0013 s
+Epoch time 56.964975118637085 s
+----- train - EPOCH 151 -----
+LEARNING RATE:  0.0005358867312681466
+train loss: {'ELY': 0.021, 'MID': 0.028, 'LTE': 0.024} (epoch: 151, step: 45) // Avg time: 0.0571 s
+Epoch time 54.09564566612244 s
+----- train - EPOCH 152 -----
+LEARNING RATE:  0.0005326703364779768
+train loss: {'ELY': 0.019, 'MID': 0.022, 'LTE': 0.024} (epoch: 152, step: 45) // Avg time: 0.0572 s
+Epoch time 54.1755428314209 s
+----- train - EPOCH 153 -----
+LEARNING RATE:  0.0005294517822920152
+train loss: {'ELY': 0.02, 'MID': 0.024, 'LTE': 0.026} (epoch: 153, step: 45) // Avg time: 0.0571 s
+Epoch time 54.79023790359497 s
+----- train - EPOCH 154 -----
+LEARNING RATE:  0.0005262310526550319
+train loss: {'ELY': 0.018, 'MID': 0.023, 'LTE': 0.021} (epoch: 154, step: 45) // Avg time: 0.0554 s
+Epoch time 54.25421738624573 s
+----- train - EPOCH 155 -----
+LEARNING RATE:  0.0005230081312823525
+train loss: {'ELY': 0.016, 'MID': 0.021, 'LTE': 0.026} (epoch: 155, step: 45) // Avg time: 0.0582 s
+----- val - EPOCH 155 -----
+ELY: val loss: 99783.227 (epoch: 155, step: 0) // Avg time/img: 0.0010 s
+ELY: val loss: 108563.24 (epoch: 155, step: 5) // Avg time/img: 0.0011 s
+ELY: val loss: 105547.237 (epoch: 155, step: 10) // Avg time/img: 0.0012 s
+ELY: val loss: 105255.797 (epoch: 155, step: 14) // Avg time/img: 0.0012 s
+MID: val loss: 101073.609 (epoch: 155, step: 0) // Avg time/img: 0.0016 s
+MID: val loss: 103406.182 (epoch: 155, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 103775.251 (epoch: 155, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 104282.365 (epoch: 155, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103798.493 (epoch: 155, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103405.739 (epoch: 155, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103205.333 (epoch: 155, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 102138.062 (epoch: 155, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 104020.518 (epoch: 155, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 103541.723 (epoch: 155, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104041.314 (epoch: 155, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104794.301 (epoch: 155, step: 19) // Avg time/img: 0.0013 s
+Epoch time 58.105942726135254 s
+----- train - EPOCH 156 -----
+LEARNING RATE:  0.0005197830016549862
+train loss: {'ELY': 0.021, 'MID': 0.021, 'LTE': 0.019} (epoch: 156, step: 45) // Avg time: 0.0557 s
+Epoch time 54.18876910209656 s
+----- train - EPOCH 157 -----
+LEARNING RATE:  0.000516555647014613
+train loss: {'ELY': 0.017, 'MID': 0.025, 'LTE': 0.024} (epoch: 157, step: 45) // Avg time: 0.0562 s
+Epoch time 54.00874853134155 s
+----- train - EPOCH 158 -----
+LEARNING RATE:  0.0005133260503584304
+train loss: {'ELY': 0.021, 'MID': 0.019, 'LTE': 0.02} (epoch: 158, step: 45) // Avg time: 0.0572 s
+Epoch time 54.17190599441528 s
+----- train - EPOCH 159 -----
+LEARNING RATE:  0.000510094194433851
+train loss: {'ELY': 0.018, 'MID': 0.02, 'LTE': 0.019} (epoch: 159, step: 45) // Avg time: 0.0587 s
+Epoch time 55.00472354888916 s
+----- train - EPOCH 160 -----
+LEARNING RATE:  0.0005068600617330473
+train loss: {'ELY': 0.016, 'MID': 0.019, 'LTE': 0.018} (epoch: 160, step: 45) // Avg time: 0.0575 s
+----- val - EPOCH 160 -----
+ELY: val loss: 105499.062 (epoch: 160, step: 0) // Avg time/img: 0.0013 s
+ELY: val loss: 104388.844 (epoch: 160, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 105405.523 (epoch: 160, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105435.326 (epoch: 160, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 103117.156 (epoch: 160, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 104079.533 (epoch: 160, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 103678.211 (epoch: 160, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102857.972 (epoch: 160, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103075.536 (epoch: 160, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103346.839 (epoch: 160, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103351.562 (epoch: 160, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 102715.945 (epoch: 160, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 105345.25 (epoch: 160, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 103893.513 (epoch: 160, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104576.446 (epoch: 160, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104815.743 (epoch: 160, step: 19) // Avg time/img: 0.0013 s
+Epoch time 56.84899091720581 s
+----- train - EPOCH 161 -----
+LEARNING RATE:  0.0005036236344873385
+train loss: {'ELY': 0.022, 'MID': 0.017, 'LTE': 0.016} (epoch: 161, step: 45) // Avg time: 0.0563 s
+Epoch time 53.91120147705078 s
+----- train - EPOCH 162 -----
+LEARNING RATE:  0.0005003848946614113
+train loss: {'ELY': 0.015, 'MID': 0.017, 'LTE': 0.021} (epoch: 162, step: 45) // Avg time: 0.0566 s
+Epoch time 54.36464262008667 s
+----- train - EPOCH 163 -----
+LEARNING RATE:  0.0004971438239473716
+train loss: {'ELY': 0.017, 'MID': 0.019, 'LTE': 0.017} (epoch: 163, step: 45) // Avg time: 0.0559 s
+Epoch time 54.74120235443115 s
+----- train - EPOCH 164 -----
+LEARNING RATE:  0.0004939004037586189
+train loss: {'ELY': 0.016, 'MID': 0.016, 'LTE': 0.015} (epoch: 164, step: 45) // Avg time: 0.0575 s
+Epoch time 54.967846393585205 s
+----- train - EPOCH 165 -----
+LEARNING RATE:  0.0004906546152235372
+train loss: {'ELY': 0.015, 'MID': 0.018, 'LTE': 0.017} (epoch: 165, step: 45) // Avg time: 0.0585 s
+----- val - EPOCH 165 -----
+ELY: val loss: 106421.594 (epoch: 165, step: 0) // Avg time/img: 0.0016 s
+ELY: val loss: 104021.753 (epoch: 165, step: 5) // Avg time/img: 0.0013 s
+ELY: val loss: 106850.118 (epoch: 165, step: 10) // Avg time/img: 0.0013 s
+ELY: val loss: 106074.693 (epoch: 165, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 106151.391 (epoch: 165, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 104591.027 (epoch: 165, step: 5) // Avg time/img: 0.0014 s
+MID: val loss: 103847.506 (epoch: 165, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103675.81 (epoch: 165, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103735.556 (epoch: 165, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103382.939 (epoch: 165, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103324.135 (epoch: 165, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 106559.078 (epoch: 165, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 103720.617 (epoch: 165, step: 5) // Avg time/img: 0.0014 s
+LTE: val loss: 104985.363 (epoch: 165, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104966.696 (epoch: 165, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104668.57 (epoch: 165, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.19437503814697 s
+----- train - EPOCH 166 -----
+LEARNING RATE:  0.00048740643917899543
+train loss: {'ELY': 0.016, 'MID': 0.016, 'LTE': 0.016} (epoch: 166, step: 45) // Avg time: 0.0536 s
+Epoch time 54.33386421203613 s
+----- train - EPOCH 167 -----
+LEARNING RATE:  0.0004841558561636513
+train loss: {'ELY': 0.018, 'MID': 0.019, 'LTE': 0.019} (epoch: 167, step: 45) // Avg time: 0.0576 s
+Epoch time 54.636557817459106 s
+----- train - EPOCH 168 -----
+LEARNING RATE:  0.000480902846411049
+train loss: {'ELY': 0.02, 'MID': 0.015, 'LTE': 0.014} (epoch: 168, step: 45) // Avg time: 0.0581 s
+Epoch time 54.08786058425903 s
+----- train - EPOCH 169 -----
+LEARNING RATE:  0.0004776473898425048
+train loss: {'ELY': 0.021, 'MID': 0.016, 'LTE': 0.017} (epoch: 169, step: 45) // Avg time: 0.0558 s
+Epoch time 54.629215717315674 s
+----- train - EPOCH 170 -----
+LEARNING RATE:  0.0004743894660597716
+train loss: {'ELY': 0.017, 'MID': 0.022, 'LTE': 0.02} (epoch: 170, step: 45) // Avg time: 0.0562 s
+----- val - EPOCH 170 -----
+ELY: val loss: 102021.297 (epoch: 170, step: 0) // Avg time/img: 0.0012 s
+ELY: val loss: 106034.984 (epoch: 170, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 104807.094 (epoch: 170, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105339.314 (epoch: 170, step: 14) // Avg time/img: 0.0011 s
+MID: val loss: 101108.109 (epoch: 170, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 102345.079 (epoch: 170, step: 5) // Avg time/img: 0.0014 s
+MID: val loss: 103683.665 (epoch: 170, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103406.092 (epoch: 170, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103361.785 (epoch: 170, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103436.99 (epoch: 170, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103245.057 (epoch: 170, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 106810.344 (epoch: 170, step: 0) // Avg time/img: 0.0013 s
+LTE: val loss: 104632.798 (epoch: 170, step: 5) // Avg time/img: 0.0011 s
+LTE: val loss: 104163.064 (epoch: 170, step: 10) // Avg time/img: 0.0011 s
+LTE: val loss: 104637.257 (epoch: 170, step: 15) // Avg time/img: 0.0011 s
+LTE: val loss: 104830.484 (epoch: 170, step: 19) // Avg time/img: 0.0011 s
+Epoch time 57.11155915260315 s
+----- train - EPOCH 171 -----
+LEARNING RATE:  0.00047112905433747303
+train loss: {'ELY': 0.015, 'MID': 0.015, 'LTE': 0.016} (epoch: 171, step: 45) // Avg time: 0.0570 s
+Epoch time 53.89400362968445 s
+----- train - EPOCH 172 -----
+LEARNING RATE:  0.0004678661336153
+train loss: {'ELY': 0.012, 'MID': 0.016, 'LTE': 0.014} (epoch: 172, step: 45) // Avg time: 0.0579 s
+Epoch time 53.941245555877686 s
+----- train - EPOCH 173 -----
+LEARNING RATE:  0.0004646006824899579
+train loss: {'ELY': 0.016, 'MID': 0.015, 'LTE': 0.012} (epoch: 173, step: 45) // Avg time: 0.0576 s
+Epoch time 54.475189447402954 s
+----- train - EPOCH 174 -----
+LEARNING RATE:  0.000461332679206857
+train loss: {'ELY': 0.012, 'MID': 0.013, 'LTE': 0.017} (epoch: 174, step: 45) // Avg time: 0.0570 s
+Epoch time 53.9417929649353 s
+----- train - EPOCH 175 -----
+LEARNING RATE:  0.00045806210165153324
+train loss: {'ELY': 0.012, 'MID': 0.012, 'LTE': 0.013} (epoch: 175, step: 45) // Avg time: 0.0581 s
+----- val - EPOCH 175 -----
+ELY: val loss: 115980.938 (epoch: 175, step: 0) // Avg time/img: 0.0014 s
+ELY: val loss: 106739.875 (epoch: 175, step: 5) // Avg time/img: 0.0013 s
+ELY: val loss: 104814.835 (epoch: 175, step: 10) // Avg time/img: 0.0013 s
+ELY: val loss: 105280.978 (epoch: 175, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 107252.664 (epoch: 175, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 103891.474 (epoch: 175, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 103922.833 (epoch: 175, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102961.321 (epoch: 175, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103332.152 (epoch: 175, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103411.221 (epoch: 175, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103391.31 (epoch: 175, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 106274.266 (epoch: 175, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 106416.193 (epoch: 175, step: 5) // Avg time/img: 0.0014 s
+LTE: val loss: 104436.48 (epoch: 175, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104261.335 (epoch: 175, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104894.522 (epoch: 175, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.11833333969116 s
+----- train - EPOCH 176 -----
+LEARNING RATE:  0.00045478892734079034
+train loss: {'ELY': 0.013, 'MID': 0.014, 'LTE': 0.016} (epoch: 176, step: 45) // Avg time: 0.0576 s
+Epoch time 54.35183382034302 s
+----- train - EPOCH 177 -----
+LEARNING RATE:  0.000451513133413552
+train loss: {'ELY': 0.015, 'MID': 0.017, 'LTE': 0.015} (epoch: 177, step: 45) // Avg time: 0.0552 s
+Epoch time 54.08644652366638 s
+----- train - EPOCH 178 -----
+LEARNING RATE:  0.0004482346966214095
+train loss: {'ELY': 0.012, 'MID': 0.011, 'LTE': 0.011} (epoch: 178, step: 45) // Avg time: 0.0578 s
+Epoch time 55.297343730926514 s
+----- train - EPOCH 179 -----
+LEARNING RATE:  0.0004449535933188559
+train loss: {'ELY': 0.013, 'MID': 0.014, 'LTE': 0.011} (epoch: 179, step: 45) // Avg time: 0.0573 s
+Epoch time 54.11363482475281 s
+----- train - EPOCH 180 -----
+LEARNING RATE:  0.0004416697994531917
+train loss: {'ELY': 0.015, 'MID': 0.011, 'LTE': 0.012} (epoch: 180, step: 45) // Avg time: 0.0574 s
+----- val - EPOCH 180 -----
+ELY: val loss: 104020.375 (epoch: 180, step: 0) // Avg time/img: 0.0011 s
+ELY: val loss: 106731.445 (epoch: 180, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 106200.341 (epoch: 180, step: 10) // Avg time/img: 0.0011 s
+ELY: val loss: 105784.342 (epoch: 180, step: 14) // Avg time/img: 0.0011 s
+MID: val loss: 105576.352 (epoch: 180, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 102452.665 (epoch: 180, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 103441.251 (epoch: 180, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103611.972 (epoch: 180, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103617.626 (epoch: 180, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103465.361 (epoch: 180, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103265.804 (epoch: 180, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 109383.633 (epoch: 180, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 106028.464 (epoch: 180, step: 5) // Avg time/img: 0.0014 s
+LTE: val loss: 105843.17 (epoch: 180, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105061.455 (epoch: 180, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104962.329 (epoch: 180, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.88537383079529 s
+----- train - EPOCH 181 -----
+LEARNING RATE:  0.00043838329055408696
+train loss: {'ELY': 0.014, 'MID': 0.011, 'LTE': 0.011} (epoch: 181, step: 45) // Avg time: 0.0574 s
+Epoch time 54.41693592071533 s
+----- train - EPOCH 182 -----
+LEARNING RATE:  0.000435094041722788
+train loss: {'ELY': 0.011, 'MID': 0.012, 'LTE': 0.014} (epoch: 182, step: 45) // Avg time: 0.0553 s
+Epoch time 54.729076623916626 s
+----- train - EPOCH 183 -----
+LEARNING RATE:  0.0004318020276209518
+train loss: {'ELY': 0.015, 'MID': 0.012, 'LTE': 0.01} (epoch: 183, step: 45) // Avg time: 0.0576 s
+Epoch time 54.04431104660034 s
+----- train - EPOCH 184 -----
+LEARNING RATE:  0.00042850722245909174
+train loss: {'ELY': 0.01, 'MID': 0.014, 'LTE': 0.015} (epoch: 184, step: 45) // Avg time: 0.0581 s
+Epoch time 54.76601529121399 s
+----- train - EPOCH 185 -----
+LEARNING RATE:  0.0004252095999846183
+train loss: {'ELY': 0.013, 'MID': 0.011, 'LTE': 0.011} (epoch: 185, step: 45) // Avg time: 0.0578 s
+----- val - EPOCH 185 -----
+ELY: val loss: 98979.594 (epoch: 185, step: 0) // Avg time/img: 0.0017 s
+ELY: val loss: 101348.555 (epoch: 185, step: 5) // Avg time/img: 0.0013 s
+ELY: val loss: 103620.505 (epoch: 185, step: 10) // Avg time/img: 0.0013 s
+ELY: val loss: 105641.792 (epoch: 185, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 103868.773 (epoch: 185, step: 0) // Avg time/img: 0.0016 s
+MID: val loss: 102422.878 (epoch: 185, step: 5) // Avg time/img: 0.0014 s
+MID: val loss: 102784.173 (epoch: 185, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102873.861 (epoch: 185, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103444.894 (epoch: 185, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103288.417 (epoch: 185, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103247.933 (epoch: 185, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 106107.867 (epoch: 185, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 103681.586 (epoch: 185, step: 5) // Avg time/img: 0.0014 s
+LTE: val loss: 103639.222 (epoch: 185, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104617.382 (epoch: 185, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104735.469 (epoch: 185, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.66253066062927 s
+----- train - EPOCH 186 -----
+LEARNING RATE:  0.00042190913346945775
+train loss: {'ELY': 0.011, 'MID': 0.01, 'LTE': 0.009} (epoch: 186, step: 45) // Avg time: 0.0582 s
+Epoch time 54.47230505943298 s
+----- train - EPOCH 187 -----
+LEARNING RATE:  0.0004186057956972281
+train loss: {'ELY': 0.011, 'MID': 0.012, 'LTE': 0.009} (epoch: 187, step: 45) // Avg time: 0.0579 s
+Epoch time 53.751458406448364 s
+----- train - EPOCH 188 -----
+LEARNING RATE:  0.00041529955894995424
+train loss: {'ELY': 0.007, 'MID': 0.008, 'LTE': 0.007} (epoch: 188, step: 45) // Avg time: 0.0579 s
+Epoch time 54.18721270561218 s
+----- train - EPOCH 189 -----
+LEARNING RATE:  0.0004119903949943003
+train loss: {'ELY': 0.009, 'MID': 0.01, 'LTE': 0.015} (epoch: 189, step: 45) // Avg time: 0.0589 s
+Epoch time 54.09823131561279 s
+----- train - EPOCH 190 -----
+LEARNING RATE:  0.0004086782750672989
+train loss: {'ELY': 0.014, 'MID': 0.012, 'LTE': 0.008} (epoch: 190, step: 45) // Avg time: 0.0582 s
+----- val - EPOCH 190 -----
+ELY: val loss: 105562.672 (epoch: 190, step: 0) // Avg time/img: 0.0012 s
+ELY: val loss: 105306.897 (epoch: 190, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 104916.506 (epoch: 190, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105701.695 (epoch: 190, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 100928.469 (epoch: 190, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 103204.167 (epoch: 190, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 103727.852 (epoch: 190, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103463.226 (epoch: 190, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103233.202 (epoch: 190, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103427.375 (epoch: 190, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103315.637 (epoch: 190, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 109264.094 (epoch: 190, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 105054.962 (epoch: 190, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 103910.29 (epoch: 190, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104608.453 (epoch: 190, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104920.319 (epoch: 190, step: 19) // Avg time/img: 0.0013 s
+Epoch time 56.962109088897705 s
+----- train - EPOCH 191 -----
+LEARNING RATE:  0.0004053631698615512
+train loss: {'ELY': 0.01, 'MID': 0.009, 'LTE': 0.008} (epoch: 191, step: 45) // Avg time: 0.0582 s
+Epoch time 54.06850981712341 s
+----- train - EPOCH 192 -----
+LEARNING RATE:  0.0004020450495098766
+train loss: {'ELY': 0.009, 'MID': 0.009, 'LTE': 0.01} (epoch: 192, step: 45) // Avg time: 0.0580 s
+Epoch time 54.23908710479736 s
+----- train - EPOCH 193 -----
+LEARNING RATE:  0.0003987238835693844
+train loss: {'ELY': 0.008, 'MID': 0.009, 'LTE': 0.007} (epoch: 193, step: 45) // Avg time: 0.0578 s
+Epoch time 54.06791043281555 s
+----- train - EPOCH 194 -----
+LEARNING RATE:  0.00039539964100493956
+train loss: {'ELY': 0.007, 'MID': 0.008, 'LTE': 0.01} (epoch: 194, step: 45) // Avg time: 0.0578 s
+Epoch time 54.10493016242981 s
+----- train - EPOCH 195 -----
+LEARNING RATE:  0.00039207229017199584
+train loss: {'ELY': 0.008, 'MID': 0.008, 'LTE': 0.009} (epoch: 195, step: 45) // Avg time: 0.0568 s
+----- val - EPOCH 195 -----
+ELY: val loss: 115091.75 (epoch: 195, step: 0) // Avg time/img: 0.0010 s
+ELY: val loss: 111785.938 (epoch: 195, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 107587.484 (epoch: 195, step: 10) // Avg time/img: 0.0011 s
+ELY: val loss: 105418.485 (epoch: 195, step: 14) // Avg time/img: 0.0011 s
+MID: val loss: 103042.438 (epoch: 195, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 104777.245 (epoch: 195, step: 5) // Avg time/img: 0.0014 s
+MID: val loss: 104467.737 (epoch: 195, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103601.994 (epoch: 195, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 102896.516 (epoch: 195, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103420.39 (epoch: 195, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103355.641 (epoch: 195, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 102311.891 (epoch: 195, step: 0) // Avg time/img: 0.0019 s
+LTE: val loss: 102910.646 (epoch: 195, step: 5) // Avg time/img: 0.0014 s
+LTE: val loss: 104370.656 (epoch: 195, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104724.516 (epoch: 195, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 105086.027 (epoch: 195, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.11058068275452 s
+----- train - EPOCH 196 -----
+LEARNING RATE:  0.0003887417987987635
+train loss: {'ELY': 0.008, 'MID': 0.006, 'LTE': 0.006} (epoch: 196, step: 45) // Avg time: 0.0572 s
+Epoch time 54.010276079177856 s
+----- train - EPOCH 197 -----
+LEARNING RATE:  0.00038540813396768125
+train loss: {'ELY': 0.009, 'MID': 0.008, 'LTE': 0.009} (epoch: 197, step: 45) // Avg time: 0.0568 s
+Epoch time 53.93695855140686 s
+----- train - EPOCH 198 -----
+LEARNING RATE:  0.0003820712620961567
+train loss: {'ELY': 0.009, 'MID': 0.01, 'LTE': 0.008} (epoch: 198, step: 45) // Avg time: 0.0577 s
+Epoch time 54.04321265220642 s
+----- train - EPOCH 199 -----
+LEARNING RATE:  0.0003787311489165393
+train loss: {'ELY': 0.009, 'MID': 0.007, 'LTE': 0.007} (epoch: 199, step: 45) // Avg time: 0.0578 s
+Epoch time 54.24337410926819 s
+----- train - EPOCH 200 -----
+LEARNING RATE:  0.00037538775945529
+train loss: {'ELY': 0.01, 'MID': 0.008, 'LTE': 0.007} (epoch: 200, step: 45) // Avg time: 0.0575 s
+----- val - EPOCH 200 -----
+ELY: val loss: 110740.555 (epoch: 200, step: 0) // Avg time/img: 0.0010 s
+ELY: val loss: 103577.865 (epoch: 200, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 104806.666 (epoch: 200, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105948.095 (epoch: 200, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 103993.344 (epoch: 200, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 100861.099 (epoch: 200, step: 5) // Avg time/img: 0.0014 s
+MID: val loss: 103189.867 (epoch: 200, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103195.265 (epoch: 200, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103269.425 (epoch: 200, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103456.6 (epoch: 200, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103328.27 (epoch: 200, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 108088.781 (epoch: 200, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 103324.995 (epoch: 200, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 103943.759 (epoch: 200, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104570.176 (epoch: 200, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104890.137 (epoch: 200, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.029104471206665 s
+----- train - EPOCH 201 -----
+LEARNING RATE:  0.00037204105801130153
+train loss: {'ELY': 0.009, 'MID': 0.012, 'LTE': 0.01} (epoch: 201, step: 45) // Avg time: 0.0584 s
+Epoch time 54.05188226699829 s
+----- train - EPOCH 202 -----
+LEARNING RATE:  0.00036869100813333194
+train loss: {'ELY': 0.008, 'MID': 0.01, 'LTE': 0.009} (epoch: 202, step: 45) // Avg time: 0.0579 s
+Epoch time 54.26127243041992 s
+----- train - EPOCH 203 -----
+LEARNING RATE:  0.0003653375725965026
+train loss: {'ELY': 0.009, 'MID': 0.01, 'LTE': 0.012} (epoch: 203, step: 45) // Avg time: 0.0578 s
+Epoch time 54.06446290016174 s
+----- train - EPOCH 204 -----
+LEARNING RATE:  0.0003619807133778105
+train loss: {'ELY': 0.009, 'MID': 0.006, 'LTE': 0.007} (epoch: 204, step: 45) // Avg time: 0.0579 s
+Epoch time 54.7298641204834 s
+----- train - EPOCH 205 -----
+LEARNING RATE:  0.0003586203916306077
+train loss: {'ELY': 0.006, 'MID': 0.006, 'LTE': 0.006} (epoch: 205, step: 45) // Avg time: 0.0555 s
+----- val - EPOCH 205 -----
+ELY: val loss: 108670.656 (epoch: 205, step: 0) // Avg time/img: 0.0013 s
+ELY: val loss: 106797.431 (epoch: 205, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 106679.323 (epoch: 205, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105760.224 (epoch: 205, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 103530.594 (epoch: 205, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 102369.066 (epoch: 205, step: 5) // Avg time/img: 0.0014 s
+MID: val loss: 102990.953 (epoch: 205, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102922.529 (epoch: 205, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 102948.82 (epoch: 205, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103170.433 (epoch: 205, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103216.272 (epoch: 205, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 108034.609 (epoch: 205, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 105234.203 (epoch: 205, step: 5) // Avg time/img: 0.0014 s
+LTE: val loss: 104674.651 (epoch: 205, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104467.308 (epoch: 205, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104799.082 (epoch: 205, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.27676463127136 s
+----- train - EPOCH 206 -----
+LEARNING RATE:  0.00035525656765798814
+train loss: {'ELY': 0.007, 'MID': 0.006, 'LTE': 0.007} (epoch: 206, step: 45) // Avg time: 0.0573 s
+Epoch time 53.62494421005249 s
+----- train - EPOCH 207 -----
+LEARNING RATE:  0.0003518892008850255
+train loss: {'ELY': 0.006, 'MID': 0.006, 'LTE': 0.007} (epoch: 207, step: 45) // Avg time: 0.0575 s
+Epoch time 53.76451134681702 s
+----- train - EPOCH 208 -----
+LEARNING RATE:  0.0003485182498298004
+train loss: {'ELY': 0.006, 'MID': 0.007, 'LTE': 0.007} (epoch: 208, step: 45) // Avg time: 0.0582 s
+Epoch time 54.46695065498352 s
+----- train - EPOCH 209 -----
+LEARNING RATE:  0.0003451436720731479
+train loss: {'ELY': 0.006, 'MID': 0.006, 'LTE': 0.006} (epoch: 209, step: 45) // Avg time: 0.0575 s
+Epoch time 55.024975299835205 s
+----- train - EPOCH 210 -----
+LEARNING RATE:  0.0003417654242270582
+train loss: {'ELY': 0.006, 'MID': 0.009, 'LTE': 0.007} (epoch: 210, step: 45) // Avg time: 0.0571 s
+----- val - EPOCH 210 -----
+ELY: val loss: 105792.984 (epoch: 210, step: 0) // Avg time/img: 0.0011 s
+ELY: val loss: 106236.686 (epoch: 210, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 107607.623 (epoch: 210, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105928.186 (epoch: 210, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 103343.094 (epoch: 210, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 103950.299 (epoch: 210, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102206.833 (epoch: 210, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102324.419 (epoch: 210, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 102425.367 (epoch: 210, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 102633.543 (epoch: 210, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103273.848 (epoch: 210, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 101860.625 (epoch: 210, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 106527.464 (epoch: 210, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105413.979 (epoch: 210, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105284.441 (epoch: 210, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 105034.834 (epoch: 210, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.74015140533447 s
+----- train - EPOCH 211 -----
+LEARNING RATE:  0.0003383834619016499
+train loss: {'ELY': 0.007, 'MID': 0.006, 'LTE': 0.006} (epoch: 211, step: 45) // Avg time: 0.0578 s
+Epoch time 53.90612530708313 s
+----- train - EPOCH 212 -----
+LEARNING RATE:  0.0003349977396706397
+train loss: {'ELY': 0.005, 'MID': 0.007, 'LTE': 0.007} (epoch: 212, step: 45) // Avg time: 0.0572 s
+Epoch time 54.32001709938049 s
+----- train - EPOCH 213 -----
+LEARNING RATE:  0.00033160821103522055
+train loss: {'ELY': 0.007, 'MID': 0.006, 'LTE': 0.005} (epoch: 213, step: 45) // Avg time: 0.0563 s
+Epoch time 54.022753953933716 s
+----- train - EPOCH 214 -----
+LEARNING RATE:  0.00032821482838625376
+train loss: {'ELY': 0.006, 'MID': 0.007, 'LTE': 0.01} (epoch: 214, step: 45) // Avg time: 0.0560 s
+Epoch time 53.59537696838379 s
+----- train - EPOCH 215 -----
+LEARNING RATE:  0.00032481754296468
+train loss: {'ELY': 0.006, 'MID': 0.007, 'LTE': 0.005} (epoch: 215, step: 45) // Avg time: 0.0578 s
+----- val - EPOCH 215 -----
+ELY: val loss: 109007.188 (epoch: 215, step: 0) // Avg time/img: 0.0011 s
+ELY: val loss: 108102.314 (epoch: 215, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 105777.214 (epoch: 215, step: 10) // Avg time/img: 0.0012 s
+ELY: val loss: 105328.128 (epoch: 215, step: 14) // Avg time/img: 0.0012 s
+MID: val loss: 101425.234 (epoch: 215, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 101399.764 (epoch: 215, step: 5) // Avg time/img: 0.0014 s
+MID: val loss: 103074.399 (epoch: 215, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103757.323 (epoch: 215, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103636.069 (epoch: 215, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103523.013 (epoch: 215, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103455.955 (epoch: 215, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 100779.93 (epoch: 215, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 104489.227 (epoch: 215, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 104719.805 (epoch: 215, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105208.66 (epoch: 215, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104978.761 (epoch: 215, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.15051865577698 s
+----- train - EPOCH 216 -----
+LEARNING RATE:  0.0003214163048200412
+train loss: {'ELY': 0.006, 'MID': 0.005, 'LTE': 0.006} (epoch: 216, step: 45) // Avg time: 0.0575 s
+Epoch time 53.932145833969116 s
+----- train - EPOCH 217 -----
+LEARNING RATE:  0.0003180110627669995
+train loss: {'ELY': 0.007, 'MID': 0.006, 'LTE': 0.004} (epoch: 217, step: 45) // Avg time: 0.0577 s
+Epoch time 53.946550607681274 s
+----- train - EPOCH 218 -----
+LEARNING RATE:  0.00031460176433973334
+train loss: {'ELY': 0.006, 'MID': 0.006, 'LTE': 0.006} (epoch: 218, step: 45) // Avg time: 0.0581 s
+Epoch time 54.457481384277344 s
+----- train - EPOCH 219 -----
+LEARNING RATE:  0.00031118835574407943
+train loss: {'ELY': 0.008, 'MID': 0.007, 'LTE': 0.005} (epoch: 219, step: 45) // Avg time: 0.0570 s
+Epoch time 53.7577645778656 s
+----- train - EPOCH 220 -----
+LEARNING RATE:  0.0003077707818072785
+train loss: {'ELY': 0.006, 'MID': 0.005, 'LTE': 0.005} (epoch: 220, step: 45) // Avg time: 0.0564 s
+----- val - EPOCH 220 -----
+ELY: val loss: 115304.391 (epoch: 220, step: 0) // Avg time/img: 0.0015 s
+ELY: val loss: 106134.147 (epoch: 220, step: 5) // Avg time/img: 0.0013 s
+ELY: val loss: 105708.114 (epoch: 220, step: 10) // Avg time/img: 0.0013 s
+ELY: val loss: 105648.298 (epoch: 220, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 99457.156 (epoch: 220, step: 0) // Avg time/img: 0.0035 s
+MID: val loss: 101759.871 (epoch: 220, step: 5) // Avg time/img: 0.0015 s
+MID: val loss: 103432.32 (epoch: 220, step: 10) // Avg time/img: 0.0014 s
+MID: val loss: 103516.064 (epoch: 220, step: 15) // Avg time/img: 0.0014 s
+MID: val loss: 103471.929 (epoch: 220, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103303.81 (epoch: 220, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103235.827 (epoch: 220, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 104878.523 (epoch: 220, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 105202.387 (epoch: 220, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 104744.022 (epoch: 220, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105011.365 (epoch: 220, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104698.49 (epoch: 220, step: 19) // Avg time/img: 0.0013 s
+Epoch time 56.846378564834595 s
+----- train - EPOCH 221 -----
+LEARNING RATE:  0.00030434898592517713
+train loss: {'ELY': 0.005, 'MID': 0.004, 'LTE': 0.005} (epoch: 221, step: 45) // Avg time: 0.0576 s
+Epoch time 53.67626929283142 s
+----- train - EPOCH 222 -----
+LEARNING RATE:  0.00030092291000672093
+train loss: {'ELY': 0.005, 'MID': 0.007, 'LTE': 0.007} (epoch: 222, step: 45) // Avg time: 0.0575 s
+Epoch time 54.06600594520569 s
+----- train - EPOCH 223 -----
+LEARNING RATE:  0.00029749249441556524
+train loss: {'ELY': 0.006, 'MID': 0.005, 'LTE': 0.004} (epoch: 223, step: 45) // Avg time: 0.0581 s
+Epoch time 54.45852589607239 s
+----- train - EPOCH 224 -----
+LEARNING RATE:  0.00029405767790861305
+train loss: {'ELY': 0.007, 'MID': 0.006, 'LTE': 0.004} (epoch: 224, step: 45) // Avg time: 0.0581 s
+Epoch time 53.93966054916382 s
+----- train - EPOCH 225 -----
+LEARNING RATE:  0.0002906183975712791
+train loss: {'ELY': 0.005, 'MID': 0.004, 'LTE': 0.004} (epoch: 225, step: 45) // Avg time: 0.0568 s
+----- val - EPOCH 225 -----
+ELY: val loss: 108850.5 (epoch: 225, step: 0) // Avg time/img: 0.0010 s
+ELY: val loss: 104253.944 (epoch: 225, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 106067.396 (epoch: 225, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105338.146 (epoch: 225, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 104089.688 (epoch: 225, step: 0) // Avg time/img: 0.0014 s
+MID: val loss: 101465.357 (epoch: 225, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102490.409 (epoch: 225, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102733.338 (epoch: 225, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103418.177 (epoch: 225, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103152.733 (epoch: 225, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103440.205 (epoch: 225, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 104051.25 (epoch: 225, step: 0) // Avg time/img: 0.0014 s
+LTE: val loss: 105365.678 (epoch: 225, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105858.504 (epoch: 225, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105289.674 (epoch: 225, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 105054.641 (epoch: 225, step: 19) // Avg time/img: 0.0013 s
+Epoch time 58.03106617927551 s
+----- train - EPOCH 226 -----
+LEARNING RATE:  0.0002871745887492587
+train loss: {'ELY': 0.004, 'MID': 0.007, 'LTE': 0.005} (epoch: 226, step: 45) // Avg time: 0.0579 s
+Epoch time 54.26869797706604 s
+----- train - EPOCH 227 -----
+LEARNING RATE:  0.0002837261849765625
+train loss: {'ELY': 0.003, 'MID': 0.004, 'LTE': 0.003} (epoch: 227, step: 45) // Avg time: 0.0574 s
+Epoch time 54.654306173324585 s
+----- train - EPOCH 228 -----
+LEARNING RATE:  0.0002802731178995616
+train loss: {'ELY': 0.006, 'MID': 0.007, 'LTE': 0.004} (epoch: 228, step: 45) // Avg time: 0.0578 s
+Epoch time 53.90053725242615 s
+----- train - EPOCH 229 -----
+LEARNING RATE:  0.0002768153171967635
+train loss: {'ELY': 0.004, 'MID': 0.005, 'LTE': 0.006} (epoch: 229, step: 45) // Avg time: 0.0573 s
+Epoch time 54.82310605049133 s
+----- train - EPOCH 230 -----
+LEARNING RATE:  0.0002733527104940148
+train loss: {'ELY': 0.006, 'MID': 0.006, 'LTE': 0.004} (epoch: 230, step: 45) // Avg time: 0.0582 s
+----- val - EPOCH 230 -----
+ELY: val loss: 101321.75 (epoch: 230, step: 0) // Avg time/img: 0.0012 s
+ELY: val loss: 105296.678 (epoch: 230, step: 5) // Avg time/img: 0.0012 s
+ELY: val loss: 105959.176 (epoch: 230, step: 10) // Avg time/img: 0.0012 s
+ELY: val loss: 105958.853 (epoch: 230, step: 14) // Avg time/img: 0.0012 s
+MID: val loss: 100972.234 (epoch: 230, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 106165.41 (epoch: 230, step: 5) // Avg time/img: 0.0014 s
+MID: val loss: 104776.885 (epoch: 230, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 104028.125 (epoch: 230, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103668.926 (epoch: 230, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103548.78 (epoch: 230, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103443.073 (epoch: 230, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 100156.688 (epoch: 230, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 103438.936 (epoch: 230, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 104269.331 (epoch: 230, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104748.677 (epoch: 230, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104786.833 (epoch: 230, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.24223518371582 s
+----- train - EPOCH 231 -----
+LEARNING RATE:  0.00026988522327480363
+train loss: {'ELY': 0.004, 'MID': 0.005, 'LTE': 0.004} (epoch: 231, step: 45) // Avg time: 0.0563 s
+Epoch time 53.80137825012207 s
+----- train - EPOCH 232 -----
+LEARNING RATE:  0.0002664127787853039
+train loss: {'ELY': 0.004, 'MID': 0.004, 'LTE': 0.003} (epoch: 232, step: 45) // Avg time: 0.0581 s
+Epoch time 54.194393157958984 s
+----- train - EPOCH 233 -----
+LEARNING RATE:  0.0002629352979337715
+train loss: {'ELY': 0.005, 'MID': 0.005, 'LTE': 0.006} (epoch: 233, step: 45) // Avg time: 0.0542 s
+Epoch time 53.8179292678833 s
+----- train - EPOCH 234 -----
+LEARNING RATE:  0.0002594526991838701
+train loss: {'ELY': 0.004, 'MID': 0.003, 'LTE': 0.003} (epoch: 234, step: 45) // Avg time: 0.0576 s
+Epoch time 54.30956315994263 s
+----- train - EPOCH 235 -----
+LEARNING RATE:  0.00025596489844146203
+train loss: {'ELY': 0.003, 'MID': 0.004, 'LTE': 0.003} (epoch: 235, step: 45) // Avg time: 0.0582 s
+----- val - EPOCH 235 -----
+ELY: val loss: 115285.625 (epoch: 235, step: 0) // Avg time/img: 0.0011 s
+ELY: val loss: 107623.223 (epoch: 235, step: 5) // Avg time/img: 0.0013 s
+ELY: val loss: 106735.785 (epoch: 235, step: 10) // Avg time/img: 0.0013 s
+ELY: val loss: 105545.109 (epoch: 235, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 107156.594 (epoch: 235, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 103180.947 (epoch: 235, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 103398.886 (epoch: 235, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103826.105 (epoch: 235, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103751.322 (epoch: 235, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103334.798 (epoch: 235, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103371.077 (epoch: 235, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 102313.703 (epoch: 235, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 104830.622 (epoch: 235, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 104164.058 (epoch: 235, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105000.866 (epoch: 235, step: 15) // Avg time/img: 0.0014 s
+LTE: val loss: 105035.591 (epoch: 235, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.37367653846741 s
+----- train - EPOCH 236 -----
+LEARNING RATE:  0.00025247180893436143
+train loss: {'ELY': 0.003, 'MID': 0.003, 'LTE': 0.003} (epoch: 236, step: 45) // Avg time: 0.0540 s
+Epoch time 53.679779291152954 s
+----- train - EPOCH 237 -----
+LEARNING RATE:  0.00024897334108449365
+train loss: {'ELY': 0.003, 'MID': 0.003, 'LTE': 0.003} (epoch: 237, step: 45) // Avg time: 0.0578 s
+Epoch time 54.61912512779236 s
+----- train - EPOCH 238 -----
+LEARNING RATE:  0.00024546940237185757
+train loss: {'ELY': 0.005, 'MID': 0.005, 'LTE': 0.003} (epoch: 238, step: 45) // Avg time: 0.0565 s
+Epoch time 53.89634299278259 s
+----- train - EPOCH 239 -----
+LEARNING RATE:  0.00024195989718962696
+train loss: {'ELY': 0.003, 'MID': 0.003, 'LTE': 0.004} (epoch: 239, step: 45) // Avg time: 0.0565 s
+Epoch time 54.93963932991028 s
+----- train - EPOCH 240 -----
+LEARNING RATE:  0.00023844472668965797
+train loss: {'ELY': 0.004, 'MID': 0.004, 'LTE': 0.004} (epoch: 240, step: 45) // Avg time: 0.0587 s
+----- val - EPOCH 240 -----
+ELY: val loss: 108703.547 (epoch: 240, step: 0) // Avg time/img: 0.0010 s
+ELY: val loss: 107101.383 (epoch: 240, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 106405.92 (epoch: 240, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105895.234 (epoch: 240, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 109201.586 (epoch: 240, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 104270.225 (epoch: 240, step: 5) // Avg time/img: 0.0014 s
+MID: val loss: 104073.734 (epoch: 240, step: 10) // Avg time/img: 0.0014 s
+MID: val loss: 103865.173 (epoch: 240, step: 15) // Avg time/img: 0.0014 s
+MID: val loss: 103300.128 (epoch: 240, step: 20) // Avg time/img: 0.0014 s
+MID: val loss: 103387.977 (epoch: 240, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103242.47 (epoch: 240, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 108561.578 (epoch: 240, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 103997.288 (epoch: 240, step: 5) // Avg time/img: 0.0014 s
+LTE: val loss: 103992.805 (epoch: 240, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104582.904 (epoch: 240, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104983.613 (epoch: 240, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.63512825965881 s
+----- train - EPOCH 241 -----
+LEARNING RATE:  0.00023492378861760376
+train loss: {'ELY': 0.004, 'MID': 0.005, 'LTE': 0.003} (epoch: 241, step: 45) // Avg time: 0.0569 s
+Epoch time 54.495389461517334 s
+----- train - EPOCH 242 -----
+LEARNING RATE:  0.0002313969771367498
+train loss: {'ELY': 0.004, 'MID': 0.004, 'LTE': 0.003} (epoch: 242, step: 45) // Avg time: 0.0568 s
+Epoch time 54.44970989227295 s
+----- train - EPOCH 243 -----
+LEARNING RATE:  0.00022786418263959327
+train loss: {'ELY': 0.004, 'MID': 0.003, 'LTE': 0.003} (epoch: 243, step: 45) // Avg time: 0.0590 s
+Epoch time 53.620757818222046 s
+----- train - EPOCH 244 -----
+LEARNING RATE:  0.0002243252915460891
+train loss: {'ELY': 0.004, 'MID': 0.004, 'LTE': 0.003} (epoch: 244, step: 45) // Avg time: 0.0588 s
+Epoch time 54.325783491134644 s
+----- train - EPOCH 245 -----
+LEARNING RATE:  0.00022078018608736818
+train loss: {'ELY': 0.004, 'MID': 0.004, 'LTE': 0.004} (epoch: 245, step: 45) // Avg time: 0.0586 s
+----- val - EPOCH 245 -----
+ELY: val loss: 110773.305 (epoch: 245, step: 0) // Avg time/img: 0.0010 s
+ELY: val loss: 106372.753 (epoch: 245, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 104897.558 (epoch: 245, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105981.677 (epoch: 245, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 97674.078 (epoch: 245, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 101054.767 (epoch: 245, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102288.578 (epoch: 245, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102472.46 (epoch: 245, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103021.387 (epoch: 245, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103273.014 (epoch: 245, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103271.454 (epoch: 245, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 105209.078 (epoch: 245, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 104912.35 (epoch: 245, step: 5) // Avg time/img: 0.0014 s
+LTE: val loss: 105367.14 (epoch: 245, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105329.845 (epoch: 245, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 105037.538 (epoch: 245, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.272862672805786 s
+----- train - EPOCH 246 -----
+LEARNING RATE:  0.00021722874407360113
+train loss: {'ELY': 0.003, 'MID': 0.003, 'LTE': 0.003} (epoch: 246, step: 45) // Avg time: 0.0569 s
+Epoch time 54.37383770942688 s
+----- train - EPOCH 247 -----
+LEARNING RATE:  0.0002136708386445385
+train loss: {'ELY': 0.003, 'MID': 0.003, 'LTE': 0.004} (epoch: 247, step: 45) // Avg time: 0.0568 s
+Epoch time 53.77334785461426 s
+----- train - EPOCH 248 -----
+LEARNING RATE:  0.00021010633800108705
+train loss: {'ELY': 0.004, 'MID': 0.004, 'LTE': 0.003} (epoch: 248, step: 45) // Avg time: 0.0577 s
+Epoch time 54.54513239860535 s
+----- train - EPOCH 249 -----
+LEARNING RATE:  0.00020653510511609667
+train loss: {'ELY': 0.004, 'MID': 0.004, 'LTE': 0.002} (epoch: 249, step: 45) // Avg time: 0.0578 s
+Epoch time 54.28797221183777 s
+----- train - EPOCH 250 -----
+LEARNING RATE:  0.00020295699742231397
+train loss: {'ELY': 0.003, 'MID': 0.003, 'LTE': 0.003} (epoch: 250, step: 45) // Avg time: 0.0579 s
+----- val - EPOCH 250 -----
+ELY: val loss: 106307.188 (epoch: 250, step: 0) // Avg time/img: 0.0016 s
+ELY: val loss: 106037.469 (epoch: 250, step: 5) // Avg time/img: 0.0013 s
+ELY: val loss: 106804.822 (epoch: 250, step: 10) // Avg time/img: 0.0012 s
+ELY: val loss: 105758.993 (epoch: 250, step: 14) // Avg time/img: 0.0012 s
+MID: val loss: 96234.484 (epoch: 250, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 101144.549 (epoch: 250, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 101752.335 (epoch: 250, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102495.11 (epoch: 250, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103141.454 (epoch: 250, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103032.672 (epoch: 250, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103321.033 (epoch: 250, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 107309.602 (epoch: 250, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 105532.111 (epoch: 250, step: 5) // Avg time/img: 0.0014 s
+LTE: val loss: 105923.819 (epoch: 250, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104658.657 (epoch: 250, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104924.612 (epoch: 250, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.523991107940674 s
+----- train - EPOCH 251 -----
+LEARNING RATE:  0.0001993718664752192
+train loss: {'ELY': 0.003, 'MID': 0.003, 'LTE': 0.002} (epoch: 251, step: 45) // Avg time: 0.0564 s
+Epoch time 53.76163125038147 s
+----- train - EPOCH 252 -----
+LEARNING RATE:  0.00019577955758817895
+train loss: {'ELY': 0.003, 'MID': 0.003, 'LTE': 0.002} (epoch: 252, step: 45) // Avg time: 0.0576 s
+Epoch time 54.15123391151428 s
+----- train - EPOCH 253 -----
+LEARNING RATE:  0.00019217990943702903
+train loss: {'ELY': 0.004, 'MID': 0.004, 'LTE': 0.003} (epoch: 253, step: 45) // Avg time: 0.0570 s
+Epoch time 53.9967942237854 s
+----- train - EPOCH 254 -----
+LEARNING RATE:  0.00018857275363083644
+train loss: {'ELY': 0.007, 'MID': 0.004, 'LTE': 0.002} (epoch: 254, step: 45) // Avg time: 0.0569 s
+Epoch time 53.745253562927246 s
+----- train - EPOCH 255 -----
+LEARNING RATE:  0.00018495791424516433
+train loss: {'ELY': 0.004, 'MID': 0.003, 'LTE': 0.002} (epoch: 255, step: 45) // Avg time: 0.0574 s
+----- val - EPOCH 255 -----
+ELY: val loss: 115531.438 (epoch: 255, step: 0) // Avg time/img: 0.0010 s
+ELY: val loss: 106085.917 (epoch: 255, step: 5) // Avg time/img: 0.0012 s
+ELY: val loss: 106890.894 (epoch: 255, step: 10) // Avg time/img: 0.0012 s
+ELY: val loss: 105731.734 (epoch: 255, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 104846.844 (epoch: 255, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 103305.557 (epoch: 255, step: 5) // Avg time/img: 0.0014 s
+MID: val loss: 102060.459 (epoch: 255, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103192.484 (epoch: 255, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103512.585 (epoch: 255, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103656.279 (epoch: 255, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103433.361 (epoch: 255, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 101299.766 (epoch: 255, step: 0) // Avg time/img: 0.0015 s
+LTE: val loss: 104223.569 (epoch: 255, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 104946.842 (epoch: 255, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104874.507 (epoch: 255, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104823.444 (epoch: 255, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.06095480918884 s
+----- train - EPOCH 256 -----
+LEARNING RATE:  0.00018133520731367455
+train loss: {'ELY': 0.002, 'MID': 0.002, 'LTE': 0.002} (epoch: 256, step: 45) // Avg time: 0.0573 s
+Epoch time 54.04243612289429 s
+----- train - EPOCH 257 -----
+LEARNING RATE:  0.000177704440273342
+train loss: {'ELY': 0.003, 'MID': 0.003, 'LTE': 0.003} (epoch: 257, step: 45) // Avg time: 0.0585 s
+Epoch time 54.71608281135559 s
+----- train - EPOCH 258 -----
+LEARNING RATE:  0.0001740654113578931
+train loss: {'ELY': 0.002, 'MID': 0.002, 'LTE': 0.002} (epoch: 258, step: 45) // Avg time: 0.0573 s
+Epoch time 54.75773310661316 s
+----- train - EPOCH 259 -----
+LEARNING RATE:  0.00017041790893331673
+train loss: {'ELY': 0.003, 'MID': 0.003, 'LTE': 0.002} (epoch: 259, step: 45) // Avg time: 0.0564 s
+Epoch time 54.02584767341614 s
+----- train - EPOCH 260 -----
+LEARNING RATE:  0.00016676171076840396
+train loss: {'ELY': 0.003, 'MID': 0.003, 'LTE': 0.002} (epoch: 260, step: 45) // Avg time: 0.0575 s
+----- val - EPOCH 260 -----
+ELY: val loss: 109638.211 (epoch: 260, step: 0) // Avg time/img: 0.0011 s
+ELY: val loss: 105135.893 (epoch: 260, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 104704.5 (epoch: 260, step: 10) // Avg time/img: 0.0012 s
+ELY: val loss: 105323.012 (epoch: 260, step: 14) // Avg time/img: 0.0012 s
+MID: val loss: 100062.445 (epoch: 260, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 103935.014 (epoch: 260, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 102946.441 (epoch: 260, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103412.95 (epoch: 260, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103107.82 (epoch: 260, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103427.533 (epoch: 260, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103337.234 (epoch: 260, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 105933.812 (epoch: 260, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 103958.111 (epoch: 260, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 103871.846 (epoch: 260, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104629.726 (epoch: 260, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104816.559 (epoch: 260, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.13831615447998 s
+----- train - EPOCH 261 -----
+LEARNING RATE:  0.00016309658323221824
+train loss: {'ELY': 0.002, 'MID': 0.002, 'LTE': 0.002} (epoch: 261, step: 45) // Avg time: 0.0576 s
+Epoch time 53.89730882644653 s
+----- train - EPOCH 262 -----
+LEARNING RATE:  0.00015942228040916463
+train loss: {'ELY': 0.002, 'MID': 0.002, 'LTE': 0.002} (epoch: 262, step: 45) // Avg time: 0.0576 s
+Epoch time 54.698437452316284 s
+----- train - EPOCH 263 -----
+LEARNING RATE:  0.0001557385431208595
+train loss: {'ELY': 0.002, 'MID': 0.003, 'LTE': 0.002} (epoch: 263, step: 45) // Avg time: 0.0577 s
+Epoch time 55.208983182907104 s
+----- train - EPOCH 264 -----
+LEARNING RATE:  0.00015204509784227151
+train loss: {'ELY': 0.002, 'MID': 0.002, 'LTE': 0.002} (epoch: 264, step: 45) // Avg time: 0.0583 s
+Epoch time 55.245689392089844 s
+----- train - EPOCH 265 -----
+LEARNING RATE:  0.00014834165549752873
+train loss: {'ELY': 0.002, 'MID': 0.002, 'LTE': 0.001} (epoch: 265, step: 45) // Avg time: 0.0576 s
+----- val - EPOCH 265 -----
+ELY: val loss: 108846.938 (epoch: 265, step: 0) // Avg time/img: 0.0017 s
+ELY: val loss: 110167.145 (epoch: 265, step: 5) // Avg time/img: 0.0014 s
+ELY: val loss: 106796.045 (epoch: 265, step: 10) // Avg time/img: 0.0013 s
+ELY: val loss: 105928.473 (epoch: 265, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 103503.516 (epoch: 265, step: 0) // Avg time/img: 0.0016 s
+MID: val loss: 103048.292 (epoch: 265, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 104500.58 (epoch: 265, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103822.274 (epoch: 265, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103655.552 (epoch: 265, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103402.372 (epoch: 265, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103055.64 (epoch: 265, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 103527.406 (epoch: 265, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 104425.801 (epoch: 265, step: 5) // Avg time/img: 0.0014 s
+LTE: val loss: 104426.438 (epoch: 265, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104142.322 (epoch: 265, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104818.966 (epoch: 265, step: 19) // Avg time/img: 0.0013 s
+Epoch time 58.485846281051636 s
+----- train - EPOCH 266 -----
+LEARNING RATE:  0.00014462791011830847
+train loss: {'ELY': 0.002, 'MID': 0.002, 'LTE': 0.002} (epoch: 266, step: 45) // Avg time: 0.0567 s
+Epoch time 54.5789008140564 s
+----- train - EPOCH 267 -----
+LEARNING RATE:  0.00014090353734474504
+train loss: {'ELY': 0.003, 'MID': 0.002, 'LTE': 0.002} (epoch: 267, step: 45) // Avg time: 0.0510 s
+Epoch time 54.878973722457886 s
+----- train - EPOCH 268 -----
+LEARNING RATE:  0.0001371681927451782
+train loss: {'ELY': 0.002, 'MID': 0.002, 'LTE': 0.002} (epoch: 268, step: 45) // Avg time: 0.0578 s
+Epoch time 55.48368430137634 s
+----- train - EPOCH 269 -----
+LEARNING RATE:  0.00013342150992667862
+train loss: {'ELY': 0.002, 'MID': 0.002, 'LTE': 0.001} (epoch: 269, step: 45) // Avg time: 0.0565 s
+Epoch time 55.62089252471924 s
+----- train - EPOCH 270 -----
+LEARNING RATE:  0.00012966309840292605
+train loss: {'ELY': 0.002, 'MID': 0.001, 'LTE': 0.004} (epoch: 270, step: 45) // Avg time: 0.0571 s
+----- val - EPOCH 270 -----
+ELY: val loss: 105148.609 (epoch: 270, step: 0) // Avg time/img: 0.0010 s
+ELY: val loss: 105446.885 (epoch: 270, step: 5) // Avg time/img: 0.0011 s
+ELY: val loss: 106333.701 (epoch: 270, step: 10) // Avg time/img: 0.0012 s
+ELY: val loss: 105315.086 (epoch: 270, step: 14) // Avg time/img: 0.0012 s
+MID: val loss: 108019.336 (epoch: 270, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 103673.639 (epoch: 270, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 104452.254 (epoch: 270, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103598.191 (epoch: 270, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103450.991 (epoch: 270, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103251.822 (epoch: 270, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103268.876 (epoch: 270, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 105501.391 (epoch: 270, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 106316.582 (epoch: 270, step: 5) // Avg time/img: 0.0014 s
+LTE: val loss: 105595.567 (epoch: 270, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105207.276 (epoch: 270, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104932.921 (epoch: 270, step: 19) // Avg time/img: 0.0013 s
+Epoch time 57.99089527130127 s
+----- train - EPOCH 271 -----
+LEARNING RATE:  0.00012589254117941672
+train loss: {'ELY': 0.002, 'MID': 0.003, 'LTE': 0.003} (epoch: 271, step: 45) // Avg time: 0.0573 s
+Epoch time 54.98857283592224 s
+----- train - EPOCH 272 -----
+LEARNING RATE:  0.0001221093920078196
+train loss: {'ELY': 0.002, 'MID': 0.001, 'LTE': 0.002} (epoch: 272, step: 45) // Avg time: 0.0576 s
+Epoch time 55.479713439941406 s
+----- train - EPOCH 273 -----
+LEARNING RATE:  0.00011831317225113293
+train loss: {'ELY': 0.002, 'MID': 0.001, 'LTE': 0.002} (epoch: 273, step: 45) // Avg time: 0.0574 s
+Epoch time 55.26822566986084 s
+----- train - EPOCH 274 -----
+LEARNING RATE:  0.00011450336728854525
+train loss: {'ELY': 0.001, 'MID': 0.002, 'LTE': 0.001} (epoch: 274, step: 45) // Avg time: 0.0587 s
+Epoch time 55.197575092315674 s
+----- train - EPOCH 275 -----
+LEARNING RATE:  0.0001106794223727881
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 275, step: 45) // Avg time: 0.0565 s
+----- val - EPOCH 275 -----
+ELY: val loss: 98609.859 (epoch: 275, step: 0) // Avg time/img: 0.0011 s
+ELY: val loss: 104324.917 (epoch: 275, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 104544.755 (epoch: 275, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105341.486 (epoch: 275, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 104452.109 (epoch: 275, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 102925.585 (epoch: 275, step: 5) // Avg time/img: 0.0014 s
+MID: val loss: 103623.385 (epoch: 275, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103897.992 (epoch: 275, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103549.572 (epoch: 275, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103528.724 (epoch: 275, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103276.411 (epoch: 275, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 108075.906 (epoch: 275, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 104911.033 (epoch: 275, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105857.006 (epoch: 275, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105340.25 (epoch: 275, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104810.426 (epoch: 275, step: 19) // Avg time/img: 0.0013 s
+Epoch time 58.43357229232788 s
+----- train - EPOCH 276 -----
+LEARNING RATE:  0.00010684073783223467
+train loss: {'ELY': 0.002, 'MID': 0.001, 'LTE': 0.001} (epoch: 276, step: 45) // Avg time: 0.0576 s
+Epoch time 55.29559302330017 s
+----- train - EPOCH 277 -----
+LEARNING RATE:  0.00010298666348361787
+train loss: {'ELY': 0.002, 'MID': 0.001, 'LTE': 0.001} (epoch: 277, step: 45) // Avg time: 0.0578 s
+Epoch time 55.30105543136597 s
+----- train - EPOCH 278 -----
+LEARNING RATE:  9.911649208701528e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 278, step: 45) // Avg time: 0.0580 s
+Epoch time 54.92021179199219 s
+----- train - EPOCH 279 -----
+LEARNING RATE:  9.52294516299169e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 279, step: 45) // Avg time: 0.0554 s
+Epoch time 55.1964590549469 s
+----- train - EPOCH 280 -----
+LEARNING RATE:  9.132469616782773e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 280, step: 45) // Avg time: 0.0544 s
+----- val - EPOCH 280 -----
+ELY: val loss: 102894.188 (epoch: 280, step: 0) // Avg time/img: 0.0016 s
+ELY: val loss: 108179.332 (epoch: 280, step: 5) // Avg time/img: 0.0013 s
+ELY: val loss: 106314.359 (epoch: 280, step: 10) // Avg time/img: 0.0013 s
+ELY: val loss: 105710.326 (epoch: 280, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 105910.117 (epoch: 280, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 102086.233 (epoch: 280, step: 5) // Avg time/img: 0.0014 s
+MID: val loss: 102544.967 (epoch: 280, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102543.608 (epoch: 280, step: 15) // Avg time/img: 0.0014 s
+MID: val loss: 102532.956 (epoch: 280, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 102913.401 (epoch: 280, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103438.331 (epoch: 280, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 101623.836 (epoch: 280, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 105363.206 (epoch: 280, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 104885.333 (epoch: 280, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104522.965 (epoch: 280, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104946.428 (epoch: 280, step: 19) // Avg time/img: 0.0013 s
+Epoch time 58.05862617492676 s
+----- train - EPOCH 281 -----
+LEARNING RATE:  8.740129486931664e-05
+train loss: {'ELY': 0.002, 'MID': 0.001, 'LTE': 0.001} (epoch: 281, step: 45) // Avg time: 0.0554 s
+Epoch time 54.883854389190674 s
+----- train - EPOCH 282 -----
+LEARNING RATE:  8.34582188055007e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 282, step: 45) // Avg time: 0.0556 s
+Epoch time 55.29352521896362 s
+----- train - EPOCH 283 -----
+LEARNING RATE:  7.949432487547622e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 283, step: 45) // Avg time: 0.0550 s
+Epoch time 54.895705461502075 s
+----- train - EPOCH 284 -----
+LEARNING RATE:  7.550833605179464e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 284, step: 45) // Avg time: 0.0574 s
+Epoch time 55.193193674087524 s
+----- train - EPOCH 285 -----
+LEARNING RATE:  7.149881683546838e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 285, step: 45) // Avg time: 0.0578 s
+----- val - EPOCH 285 -----
+ELY: val loss: 108850.438 (epoch: 285, step: 0) // Avg time/img: 0.0014 s
+ELY: val loss: 106478.504 (epoch: 285, step: 5) // Avg time/img: 0.0013 s
+ELY: val loss: 104910.23 (epoch: 285, step: 10) // Avg time/img: 0.0013 s
+ELY: val loss: 106077.103 (epoch: 285, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 102337.25 (epoch: 285, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 104530.591 (epoch: 285, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 104176.408 (epoch: 285, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102868.815 (epoch: 285, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103228.946 (epoch: 285, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103338.039 (epoch: 285, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103412.238 (epoch: 285, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 111611.414 (epoch: 285, step: 0) // Avg time/img: 0.0016 s
+LTE: val loss: 107095.039 (epoch: 285, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105689.98 (epoch: 285, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105277.345 (epoch: 285, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104947.325 (epoch: 285, step: 19) // Avg time/img: 0.0013 s
+Epoch time 58.28802680969238 s
+----- train - EPOCH 286 -----
+LEARNING RATE:  6.746414238367822e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 286, step: 45) // Avg time: 0.0578 s
+Epoch time 54.58708095550537 s
+----- train - EPOCH 287 -----
+LEARNING RATE:  6.340245914362473e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 287, step: 45) // Avg time: 0.0578 s
+Epoch time 54.96614456176758 s
+----- train - EPOCH 288 -----
+LEARNING RATE:  5.931163387399998e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 288, step: 45) // Avg time: 0.0593 s
+Epoch time 55.1510694026947 s
+----- train - EPOCH 289 -----
+LEARNING RATE:  5.518918645844863e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 289, step: 45) // Avg time: 0.0582 s
+Epoch time 56.20197868347168 s
+----- train - EPOCH 290 -----
+LEARNING RATE:  5.103219955441417e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 290, step: 45) // Avg time: 0.0575 s
+----- val - EPOCH 290 -----
+ELY: val loss: 97539.977 (epoch: 290, step: 0) // Avg time/img: 0.0011 s
+ELY: val loss: 105502.652 (epoch: 290, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 105283.141 (epoch: 290, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105984.487 (epoch: 290, step: 14) // Avg time/img: 0.0010 s
+MID: val loss: 107167.0 (epoch: 290, step: 0) // Avg time/img: 0.0017 s
+MID: val loss: 104932.454 (epoch: 290, step: 5) // Avg time/img: 0.0014 s
+MID: val loss: 103665.928 (epoch: 290, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103847.069 (epoch: 290, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103417.048 (epoch: 290, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103215.818 (epoch: 290, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103457.346 (epoch: 290, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 98981.969 (epoch: 290, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 105312.247 (epoch: 290, step: 5) // Avg time/img: 0.0014 s
+LTE: val loss: 105138.705 (epoch: 290, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105010.931 (epoch: 290, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104936.262 (epoch: 290, step: 19) // Avg time/img: 0.0013 s
+Epoch time 58.18724989891052 s
+----- train - EPOCH 291 -----
+LEARNING RATE:  4.6837194216121523e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 291, step: 45) // Avg time: 0.0573 s
+Epoch time 55.18393802642822 s
+----- train - EPOCH 292 -----
+LEARNING RATE:  4.259995391188707e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 292, step: 45) // Avg time: 0.0584 s
+Epoch time 55.22786617279053 s
+----- train - EPOCH 293 -----
+LEARNING RATE:  3.8315267243499006e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 293, step: 45) // Avg time: 0.0568 s
+Epoch time 55.056318283081055 s
+----- train - EPOCH 294 -----
+LEARNING RATE:  3.397653658483928e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 294, step: 45) // Avg time: 0.0575 s
+Epoch time 55.24240708351135 s
+----- train - EPOCH 295 -----
+LEARNING RATE:  2.9575152732566297e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 295, step: 45) // Avg time: 0.0573 s
+----- val - EPOCH 295 -----
+ELY: val loss: 104127.953 (epoch: 295, step: 0) // Avg time/img: 0.0012 s
+ELY: val loss: 105847.891 (epoch: 295, step: 5) // Avg time/img: 0.0013 s
+ELY: val loss: 104219.135 (epoch: 295, step: 10) // Avg time/img: 0.0013 s
+ELY: val loss: 105397.472 (epoch: 295, step: 14) // Avg time/img: 0.0013 s
+MID: val loss: 102175.508 (epoch: 295, step: 0) // Avg time/img: 0.0018 s
+MID: val loss: 104578.879 (epoch: 295, step: 5) // Avg time/img: 0.0013 s
+MID: val loss: 104712.328 (epoch: 295, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 103977.609 (epoch: 295, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 103614.515 (epoch: 295, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103112.075 (epoch: 295, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103227.264 (epoch: 295, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 110518.969 (epoch: 295, step: 0) // Avg time/img: 0.0015 s
+LTE: val loss: 105488.961 (epoch: 295, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105138.43 (epoch: 295, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 104280.224 (epoch: 295, step: 15) // Avg time/img: 0.0013 s
+LTE: val loss: 104861.067 (epoch: 295, step: 19) // Avg time/img: 0.0013 s
+Epoch time 58.750147581100464 s
+----- train - EPOCH 296 -----
+LEARNING RATE:  2.509943091024878e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 296, step: 45) // Avg time: 0.0556 s
+Epoch time 54.66815757751465 s
+----- train - EPOCH 297 -----
+LEARNING RATE:  2.053264332078417e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 297, step: 45) // Avg time: 0.0574 s
+Epoch time 54.78864598274231 s
+----- train - EPOCH 298 -----
+LEARNING RATE:  1.5848931924611145e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 298, step: 45) // Avg time: 0.0537 s
+Epoch time 55.1780788898468 s
+----- train - EPOCH 299 -----
+LEARNING RATE:  1.1003171113469854e-05
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 299, step: 45) // Avg time: 0.0572 s
+Epoch time 54.900097608566284 s
+----- train - EPOCH 300 -----
+LEARNING RATE:  5.896453401581364e-06
+train loss: {'ELY': 0.001, 'MID': 0.001, 'LTE': 0.001} (epoch: 300, step: 45) // Avg time: 0.0570 s
+----- val - EPOCH 300 -----
+ELY: val loss: 111911.562 (epoch: 300, step: 0) // Avg time/img: 0.0012 s
+ELY: val loss: 106722.844 (epoch: 300, step: 5) // Avg time/img: 0.0010 s
+ELY: val loss: 105909.972 (epoch: 300, step: 10) // Avg time/img: 0.0010 s
+ELY: val loss: 105338.228 (epoch: 300, step: 14) // Avg time/img: 0.0011 s
+MID: val loss: 101265.547 (epoch: 300, step: 0) // Avg time/img: 0.0018 s
+MID: val loss: 100479.092 (epoch: 300, step: 5) // Avg time/img: 0.0014 s
+MID: val loss: 102329.391 (epoch: 300, step: 10) // Avg time/img: 0.0013 s
+MID: val loss: 102953.111 (epoch: 300, step: 15) // Avg time/img: 0.0013 s
+MID: val loss: 102577.914 (epoch: 300, step: 20) // Avg time/img: 0.0013 s
+MID: val loss: 103059.067 (epoch: 300, step: 25) // Avg time/img: 0.0013 s
+MID: val loss: 103250.519 (epoch: 300, step: 28) // Avg time/img: 0.0013 s
+LTE: val loss: 108001.406 (epoch: 300, step: 0) // Avg time/img: 0.0017 s
+LTE: val loss: 105439.928 (epoch: 300, step: 5) // Avg time/img: 0.0013 s
+LTE: val loss: 105399.048 (epoch: 300, step: 10) // Avg time/img: 0.0013 s
+LTE: val loss: 105173.572 (epoch: 300, step: 15) // Avg time/img: 0.0014 s
+LTE: val loss: 104785.512 (epoch: 300, step: 19) // Avg time/img: 0.0013 s
+Epoch time 58.6469452381134 s
+========== TRAINING FINISHED ===========
+Took 275.1306560357412 minutes
